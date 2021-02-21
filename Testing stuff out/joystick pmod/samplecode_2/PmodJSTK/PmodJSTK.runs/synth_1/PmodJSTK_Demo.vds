@@ -1,0 +1,462 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Jan 25 16:46:54 2016
+# Process ID: 3288
+# Log file: C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.runs/synth_1/PmodJSTK_Demo.vds
+# Journal file: C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source PmodJSTK_Demo.tcl -notrace
+Command: synth_design -top PmodJSTK_Demo -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 245.070 ; gain = 68.156
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'PmodJSTK_Demo' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+INFO: [Synth 8-638] synthesizing module 'PmodJSTK' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-638] synthesizing module 'spiCtrl' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Wait bound to: 3'b010 
+	Parameter Check bound to: 3'b011 
+	Parameter Done bound to: 3'b100 
+	Parameter byteEndVal bound to: 3'b101 
+INFO: [Synth 8-256] done synthesizing module 'spiCtrl' (1#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27]
+INFO: [Synth 8-638] synthesizing module 'spiMode0' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37]
+	Parameter Idle bound to: 2'b00 
+	Parameter Init bound to: 2'b01 
+	Parameter RxTx bound to: 2'b10 
+	Parameter Done bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/SPImode0.v:184]
+INFO: [Synth 8-256] done synthesizing module 'spiMode0' (2#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+	Parameter cntEndVal bound to: 10'b1011101110 
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_66_67kHz' (3#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+INFO: [Synth 8-256] done synthesizing module 'PmodJSTK' (4#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-638] synthesizing module 'ssdCtrl' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28]
+	Parameter cntEndVal bound to: 16'b1100001101010000 
+INFO: [Synth 8-638] synthesizing module 'Binary_To_BCD' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Shift bound to: 3'b011 
+	Parameter Check bound to: 3'b010 
+	Parameter Done bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:84]
+INFO: [Synth 8-256] done synthesizing module 'Binary_To_BCD' (5#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:144]
+INFO: [Synth 8-256] done synthesizing module 'ssdCtrl' (6#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28]
+INFO: [Synth 8-638] synthesizing module 'ClkDiv_5Hz' [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+	Parameter cntEndVal bound to: 24'b100110001001011010000000 
+INFO: [Synth 8-256] done synthesizing module 'ClkDiv_5Hz' (7#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+INFO: [Synth 8-256] done synthesizing module 'PmodJSTK_Demo' (8#1) [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 279.324 ; gain = 102.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 279.324 ; gain = 102.410
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc]
+Finished Parsing XDC File [C:/Users/kfranz/Desktop/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 567.305 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'pState_reg' in module 'spiCtrl'
+INFO: [Synth 8-5544] ROM "SS" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sndData" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmpSR" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "DOUT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pState" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "pState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'STATE_reg' in module 'Binary_To_BCD'
+INFO: [Synth 8-5544] ROM "shiftCount" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "BCDOUT" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "STATE" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "DCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "CLKOUT" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                              000 |                              000
+                    Init |                              001 |                              001
+                    Wait |                              010 |                              010
+                   Check |                              011 |                              011
+                    Done |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'pState_reg' using encoding 'sequential' in module 'spiCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                              000 |                              000
+                    Init |                              001 |                              001
+                   Shift |                              010 |                              011
+                   Check |                              011 |                              010
+                    Done |                              100 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'STATE_reg' using encoding 'sequential' in module 'Binary_To_BCD'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               16 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   5 Input     40 Bit        Muxes := 1     
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     28 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 10    
+	   4 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PmodJSTK_Demo 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+Module spiCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Muxes : 
+	   5 Input     40 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 7     
+Module spiMode0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module ClkDiv_66_67kHz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module Binary_To_BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               28 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     28 Bit        Muxes := 1     
+	   5 Input     28 Bit        Muxes := 2     
+	   5 Input      5 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+Module ssdCtrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	  11 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module ClkDiv_5Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "PmodJSTK_Int/SerialClock/CLKOUT" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "DispCtrl/DCLK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "genSndRec/CLKOUT" won't be mapped to RAM because address size (24) is larger than maximum supported(18)
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 567.305 ; gain = 390.391
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PmodJSTK_Int/SPI_Ctrl/sndData_reg[6] )
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/sndData_reg[6] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/sndData_reg[5] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/sndData_reg[4] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/sndData_reg[3] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/sndData_reg[2] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[31] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[30] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[29] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[28] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[27] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[26] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[15] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[14] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[13] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[12] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[11] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[10] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[7] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[6] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[5] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[4] ) is unused and will be removed from module PmodJSTK_Demo.
+WARNING: [Synth 8-3332] Sequential element (\PmodJSTK_Int/SPI_Ctrl/DOUT_reg[3] ) is unused and will be removed from module PmodJSTK_Demo.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 567.305 ; gain = 390.391
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    10|
+|3     |LUT1   |    42|
+|4     |LUT2   |    29|
+|5     |LUT3   |    57|
+|6     |LUT4   |    13|
+|7     |LUT5   |    37|
+|8     |LUT6   |    68|
+|9     |FDRE   |   215|
+|10    |FDSE   |     2|
+|11    |IBUF   |     6|
+|12    |OBUF   |    17|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+----------------+------+
+|      |Instance        |Module          |Cells |
++------+----------------+----------------+------+
+|1     |top             |                |   498|
+|2     |  DispCtrl      |ssdCtrl         |   181|
+|3     |    BtoBCD      |Binary_To_BCD   |   122|
+|4     |  PmodJSTK_Int  |PmodJSTK        |   209|
+|5     |    SPI_Ctrl    |spiCtrl         |   134|
+|6     |    SPI_Int     |spiMode0        |    46|
+|7     |    SerialClock |ClkDiv_66_67kHz |    29|
+|8     |  genSndRec     |ClkDiv_5Hz      |    83|
++------+----------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 567.305 ; gain = 87.270
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 567.305 ; gain = 390.391
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 16 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 91 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+54 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 567.305 ; gain = 376.594
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 567.305 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 25 16:47:27 2016...

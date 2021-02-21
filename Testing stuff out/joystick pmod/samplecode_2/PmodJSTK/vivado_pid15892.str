@@ -1,0 +1,2566 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 15892
+License: Customer
+
+Current time: 	Fri Feb 19 10:10:42 PST 2021
+Time zone: 	Pacific Standard Time (America/Los_Angeles)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Available disk space: 22 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	D:/Xilinx/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	George
+User home directory: C:/Users/George
+User working directory: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: D:/Xilinx/Vivado
+HDI_APPROOT: D:/Xilinx/Vivado/2019.2
+RDI_DATADIR: D:/Xilinx/Vivado/2019.2/data
+RDI_BINDIR: D:/Xilinx/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/George/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/George/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/George/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	D:/Xilinx/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/vivado.log
+Vivado journal file location: 	C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/vivado.jou
+Engine tmp dir: 	C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/.Xil/Vivado-15892-DESKTOP-MB5IJCE
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: D:/Xilinx/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Xilinx/Vivado/2019.2
+XILINX_VIVADO: D:/Xilinx/Vivado/2019.2
+XILINX_VIVADO_HLS: D:/Xilinx/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 665 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 100 MB (+102806kb) [00:00:10]
+// [Engine Memory]: 651 MB (+531417kb) [00:00:10]
+// aN (cr): Older Project Version: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 665 MB. GUI used memory: 49 MB. Current time: 2/19/21, 10:10:44 AM PST
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+selectRadioButton(PAResourceTtoZ.UpgradeProjectDialog_OPEN_PROJECT_IN_READ_ONLY_MODE, "Open project in read-only mode"); // a (Q, aN)
+selectRadioButton(PAResourceTtoZ.UpgradeProjectDialog_AUTOMATICALLY_UPGRADE_TO_CURRENT, "Automatically upgrade to the current version"); // a (Q, aN)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (aN)
+// Opening Vivado Project: C:\Users\George\Desktop\Github\Bronco Pong\Testing stuff out\joystick pmod\samplecode_2\PmodJSTK\PmodJSTK.xpr. Version: Vivado v2015.2 
+// bB (cr):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+dismissDialog("Older Project Version"); // aN (cr)
+// Tcl Message: open_project {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK' INFO: [Project 1-313] Project file moved from 'C:/Users/kfranz/Desktop/PmodJSTK' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [Project 1-230] Project 'PmodJSTK.xpr' upgraded for this version of Vivado. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 764 MB. GUI used memory: 50 MB. Current time: 2/19/21, 10:11:59 AM PST
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 808 MB (+130537kb) [00:01:31]
+// [GUI Memory]: 106 MB (+731kb) [00:01:32]
+// [Engine Memory]: 854 MB (+5897kb) [00:01:32]
+// WARNING: HEventQueue.dispatchEvent() is taking  2823 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 929.000 ; gain = 218.207 
+// Project name: PmodJSTK; location: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK; part: xc7a35tcpg236-1
+// Elapsed time: 10 seconds
+dismissDialog("Open Project"); // bB (cr)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 115 MB (+3837kb) [00:01:36]
+// Elapsed time: 943 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3); // B (F, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 49 seconds
+selectCodeEditor("SPImode0.v", 226, 148, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPImode0.v", 193, 151); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 188, 166); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("spiCtrl.v", 125, 196); // ch (w, cr)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (O, cr) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// bB (cr):  Open Elaborated Design : addNotify
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7a35tcpg236-1 Top: PmodJSTK_Demo 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,277 MB. GUI used memory: 58 MB. Current time: 2/19/21, 10:29:19 AM PST
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// [Engine Memory]: 1,393 MB (+519840kb) [00:19:00]
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,400 MB. GUI used memory: 58 MB. Current time: 2/19/21, 10:29:30 AM PST
+// [Engine Memory]: 1,530 MB (+70305kb) [00:19:01]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// Schematic: addNotify
+// [GUI Memory]: 128 MB (+7215kb) [00:19:03]
+// WARNING: HEventQueue.dispatchEvent() is taking  1589 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1388.770 ; gain = 223.551 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'PmodJSTK_Demo' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38] INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24] INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27] 
+// Tcl Message: 	Parameter Idle bound to: 3'b000  	Parameter Init bound to: 3'b001  	Parameter Wait bound to: 3'b010  	Parameter Check bound to: 3'b011  	Parameter Done bound to: 3'b100  	Parameter byteEndVal bound to: 3'b101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27] INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37] 
+// Tcl Message: 	Parameter Idle bound to: 2'b00  	Parameter Init bound to: 2'b01  	Parameter RxTx bound to: 2'b10  	Parameter Done bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:184] INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (2#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37] INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20] 
+// Tcl Message: 	Parameter cntEndVal bound to: 10'b1011101110  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20] INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24] INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28] 
+// Tcl Message: 	Parameter cntEndVal bound to: 16'b1100001101010000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30] 
+// Tcl Message: 	Parameter Idle bound to: 3'b000  	Parameter Init bound to: 3'b001  	Parameter Shift bound to: 3'b011  	Parameter Check bound to: 3'b010  	Parameter Done bound to: 3'b110  
+// Tcl Message: 	Parameter cntEndVal bound to: 24'b100110001001011010000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (7#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20] INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK_Demo' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.762 ; gain = 272.543 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.762 ; gain = 272.543 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.762 ; gain = 272.543 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1437.762 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc] Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1558.559 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.059 ; gain = 442.840 
+// Tcl Message: 23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1608.059 ; gain = 678.016 
+// 'dQ' command handler elapsed time: 19 seconds
+// Elapsed time: 19 seconds
+dismissDialog("Open Elaborated Design"); // bB (cr)
+// [GUI Memory]: 138 MB (+4296kb) [00:19:16]
+// Schematic: addNotify
+// [GUI Memory]: 146 MB (+1073kb) [00:19:36]
+// Elapsed time: 35 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aL (aI, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6); // B (F, cr)
+selectCodeEditor("ssdCtrl.v", 175, 140); // ch (w, cr)
+selectCodeEditor("ssdCtrl.v", 184, 157); // ch (w, cr)
+selectCodeEditor("ssdCtrl.v", 190, 184); // ch (w, cr)
+selectCodeEditor("ssdCtrl.v", 182, 145); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+// PAPropertyPanels.initPanels (RST) elapsed time: 0.3s
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+// Elapsed time: 56 seconds
+selectCodeEditor("ssdCtrl.v", 461, 330); // ch (w, cr)
+selectCodeEditor("ssdCtrl.v", 438, 345); // ch (w, cr)
+// Elapsed time: 44 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 6); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v), BtoBCD : Binary_To_BCD (Binary_To_BCD.v)]", 7, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v), BtoBCD : Binary_To_BCD (Binary_To_BCD.v)]", 7, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 119 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), genSndRec : ClkDiv_5Hz (ClkDiv_5Hz.v)]", 8, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), genSndRec : ClkDiv_5Hz (ClkDiv_5Hz.v)]", 8, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 175 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("spiCtrl.v", 585, 364); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 582, 391); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 585, 420); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 576, 437); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 447, 220); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 426, 238); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 359, 281); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 327, 353); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 326, 394); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 621, 346); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 615, 358); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 598, 378); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 591, 403); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 353, 328); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 348, 359); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 354, 343); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 348, 371); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 330, 391); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 366, 361); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 478, 361); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 428, 382); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 436, 370); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 410, 382); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 421, 369); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 396, 397); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 457, 409); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("spiCtrl.v", 316, 536); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 315, 536); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 315, 536, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("spiCtrl.v", 408, 340); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 321, 282); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 321, 282, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("spiCtrl.v", 467, 287); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("spiCtrl.v", 438, 180); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 514, 358); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 359, 245); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 359, 314); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 332, 361); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 472, 384); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 468, 425); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 315, 247); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 659, 254); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 653, 271); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 650, 290); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 655, 280); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 630, 293); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 609, 316); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 578, 332); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 459, 384); // ch (w, cr)
+// [GUI Memory]: 154 MB (+784kb) [00:29:08]
+// Elapsed time: 30 seconds
+selectCodeEditor("spiCtrl.v", 387, 370); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 544, 371); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 534, 325); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 449, 422); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+// Elapsed time: 584 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("PmodJSTK_Demo.v", 263, 317); // ch (w, cr)
+selectCodeEditor("PmodJSTK_Demo.v", 266, 357); // ch (w, cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true, false, false, false, true, false); // B (F, cr) - Popup Trigger - Node
+selectCodeEditor("PmodJSTK_Demo.v", 2, 61); // ch (w, cr)
+selectCodeEditor("PmodJSTK_Demo.v", 17, 93); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// k (cr): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (i, cr)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bB)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PmodJSTK_Demo.v", 2, false, true); // i (h, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H (aI, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1647.789 ; gain = 29.008 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// TclEventType: ELABORATE_FINISH
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 82 MB. Current time: 2/19/21, 10:50:36 AM PST
+// Engine heap size: 1,572 MB. GUI used memory: 82 MB. Current time: 2/19/21, 10:50:36 AM PST
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'PmodJSTK_Demo' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38] INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24] INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27] 
+// Tcl Message: 	Parameter Idle bound to: 3'b000  	Parameter Init bound to: 3'b001  	Parameter Wait bound to: 3'b010  	Parameter Check bound to: 3'b011  	Parameter Done bound to: 3'b100  	Parameter byteEndVal bound to: 3'b101  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27] INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37] 
+// Tcl Message: 	Parameter Idle bound to: 2'b00  	Parameter Init bound to: 2'b01  	Parameter RxTx bound to: 2'b10  	Parameter Done bound to: 2'b11  
+// Tcl Message: INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:184] INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (2#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37] INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20] 
+// Tcl Message: 	Parameter cntEndVal bound to: 10'b1011101110  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20] INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24] INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28] 
+// Tcl Message: 	Parameter cntEndVal bound to: 16'b1100001101010000  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30] 
+// Tcl Message: 	Parameter Idle bound to: 3'b000  	Parameter Init bound to: 3'b001  	Parameter Shift bound to: 3'b011  	Parameter Check bound to: 3'b010  	Parameter Done bound to: 3'b110  
+// Tcl Message: 	Parameter cntEndVal bound to: 24'b100110001001011010000000  
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (7#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20] INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK_Demo' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1674.820 ; gain = 56.039 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1697.648 ; gain = 78.867 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1697.648 ; gain = 78.867 
+// Tcl Message: --------------------------------------------------------------------------------- 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: LOC_CONSTRAINT_ADD
+// TclEventType: SIGNAL_MODIFY
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_REFRESH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 65 MB. Current time: 2/19/21, 10:50:38 AM PST
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1589 ms.
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1697.648 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc] Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 1714.156 ; gain = 95.375 
+dismissDialog("Reloading"); // bB (cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectCodeEditor("SPImode0.v", 332, 208); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 531, 238); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 449, 232); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 349, 249, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPImode0.v", 221, 271); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 300, 295); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 257, 278); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPImode0.v", 390, 222); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 362, 244); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 325, 264); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPImode0.v", 168, 317, false, false, false, true, false); // ch (w, cr) - Popup Trigger
+selectCodeEditor("SPImode0.v", 118, 387); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 215, 311); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 264, 316); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 236, 337); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 236, 346); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 237, 318); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 235, 352); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 315, 363); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 318, 384); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 320, 402); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 280, 372); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 280, 390); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 269, 378); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 266, 374); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 317, 335); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("SPImode0.v", 243, 277); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 307, 245); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 361, 228); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 260, 267); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 260, 267, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 449, 234); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 374, 300); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 238, 282); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 261, 276); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 256, 280); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 251, 300); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 272, 257); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 311, 317); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 364, 260); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 269, 337); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 269, 337, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 444, 267); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 251, 365); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 256, 300); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 311, 380); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 320, 313); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 359, 403); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 507, 405); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 373, 399); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 367, 399); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 367, 399); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 368, 330); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 305, 420); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 311, 353); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 188, 405); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 261, 435); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 261, 435, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 256, 375); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 253, 361); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 308, 449); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 255, 463); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 259, 393); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 311, 483); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 341, 400); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 269, 498); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 269, 498, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 458, 399); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 433, 402); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 230, 500); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 339, 369); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 354, 339); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 358, 331); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 411, 314); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 341, 344); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 479, 330); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPImode0.v", 353, 332); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 404, 337); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 435, 338); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 392, 385); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 474, 391); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 466, 384); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 442, 430); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 234, 410); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 358, 343); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("SPImode0.v", 639, 321); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 766, 408); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 484, 224); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 706, 216); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 613, 430); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 425, 344); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 248, 271); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 248, 271, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("SPImode0.v", 292, 603); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPImode0.v", 425, 422); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 412, 432); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 403, 456); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 400, 474); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 242, 376); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 282, 382); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 302, 414); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 324, 426); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 359, 439); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 365, 448); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 375, 517); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 370, 437); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 356, 478); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 347, 470); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 388, 428); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 453, 413); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 323, 407); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 323, 407, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 329, 417); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 329, 417, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 418, 486); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 453, 420); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 434, 442); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 428, 435); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 335, 378); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 446, 508); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 282, 381); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 510, 407); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 365, 372); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 479, 387); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 467, 432); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 442, 536); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 540, 570); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 299, 423); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 228, 425); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 230, 420); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 305, 383); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 305, 429); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 474, 416); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 491, 438); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 635, 435); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 633, 431); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 633, 431); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("SPImode0.v", 693, 451); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 822, 477); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 691, 426); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 689, 450); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 716, 453); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectCodeEditor("SPImode0.v", 521, 488); // ch (w, cr)
+// Elapsed time: 32 seconds
+selectCodeEditor("SPImode0.v", 611, 347); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 684, 342); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 583, 350); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 583, 350, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPImode0.v", 701, 350); // ch (w, cr)
+// Elapsed time: 232 seconds
+selectCodeEditor("SPImode0.v", 488, 361); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 452, 401); // ch (w, cr)
+// Elapsed time: 66 seconds
+selectCodeEditor("SPImode0.v", 408, 572); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 426, 619); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 431, 587); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 450, 598); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 458, 593); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 448, 612); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 488, 685); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 476, 651); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPImode0.v", 620, 405); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPImode0.v", 526, 484); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 431, 398); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 623, 377); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 626, 372); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 580, 384); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 640, 321); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 648, 318); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 641, 317); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 703, 309); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 791, 412); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 458, 435); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("SPImode0.v", 783, 429); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// [GUI Memory]: 170 MB (+8340kb) [00:55:14]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+// Elapsed time: 91 seconds
+selectButton(PAResourceQtoS.SchematicView_REMOVE, "Schematic_remove"); // E (f, cr)
+selectButton(PAResourceQtoS.SchematicView_REMOVE, "Schematic_remove"); // E (f, cr)
+// Elapsed time: 243 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+// Elapsed time: 309 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spiCtrl.v", 2); // i (h, cr)
+selectCodeEditor("spiCtrl.v", 470, 470); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 731, 472); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("spiCtrl.v", 151, 472); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 151, 472, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+// Elapsed time: 103 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spiCtrl.v", 2); // i (h, cr)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Schematic", 1); // i (h, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 96 MB. Current time: 2/19/21, 11:20:40 AM PST
+// Schematic: addNotify
+// Elapsed time: 1155 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), genSndRec : ClkDiv_5Hz (ClkDiv_5Hz.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), genSndRec : ClkDiv_5Hz (ClkDiv_5Hz.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v), BtoBCD : Binary_To_BCD (Binary_To_BCD.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v), BtoBCD : Binary_To_BCD (Binary_To_BCD.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), DispCtrl : ssdCtrl (ssdCtrl.v)]", 3, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SerialClock : ClkDiv_66_67kHz (ClkDiv_66_67kHz.v)]", 5, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("PmodJSTK_Demo.v", 39, 249); // ch (w, cr)
+selectCodeEditor("PmodJSTK_Demo.v", 171, 145); // ch (w, cr)
+selectCodeEditor("PmodJSTK_Demo.v", 171, 145, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("PmodJSTK_Demo.v", 177, 145); // ch (w, cr)
+selectCodeEditor("PmodJSTK_Demo.v", 177, 145, false, false, false, false, true); // ch (w, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 98 MB. Current time: 2/19/21, 11:50:40 AM PST
+// Elapsed time: 2156 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // af (cr)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ai (cr)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // aa (q, cr)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cr): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // t (an, f)
+setFolderChooser("C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod");
+// Elapsed time: 11 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "JSTK_SPI_rev1"); // ac (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 18 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7z"); // OverlayTextField (I, f)
+// Elapsed time: 27 seconds
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", "xc7z020clg400"); // OverlayTextField (I, f)
+selectTable(PAResourceEtoH.FPGAChooser_FPGA_TABLE, "xc7z020clg400-3 ; 400 ; 125 ; 53200 ; 106400 ; 140 ; 0 ; 220 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05 ; ", 0, "xc7z020clg400-3", 0); // w (O, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// bB (f):  Create Project : addNotify
+// Elapsed time: 56 seconds
+selectButton("OptionPane.button", "No"); // JButton (A, H)
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: create_project JSTK_SPI_rev1 {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1} -part xc7z020clg400-3 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1' 
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  2476 ms.
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1717.859 ; gain = 3.703 
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 131 seconds
+dismissDialog("Create Project"); // bB (f)
+dismissDialog("New Project"); // f (cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 11 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "JSTK_SPI_top"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// Tcl Command: 'file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new'
+dismissDialog("Create Source File"); // F (c)
+// Tcl Message: file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new 
+// Tcl Command: 'file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new 
+// Tcl Command: 'file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new'
+// Tcl Command: 'file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new'
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 14 seconds
+// Tcl Command: 'file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new 
+// Tcl Message: file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new 
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Command: 'file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new'
+// Tcl Message: file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new 
+// bB (cr):  Add Sources  : addNotify
+// Tcl Message: file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new 
+// Tcl Message: file mkdir {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new} 
+// Tcl Message: close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/JSTK_SPI_top.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/JSTK_SPI_top.v}} 
+// I (cr): Define Module: addNotify
+dismissDialog("Add Sources"); // bB (cr)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("JSTK_SPI_top.v", 74, 400); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 166, 182); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 158, 227); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 148, 266); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 146, 244); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 142, 257); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 191, 300); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 154, 262); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 194, 303); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 267, 280); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 257, 296); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 257, 282); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 250, 292); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 154, 403); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 200, 300); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 187, 320); // ch (w, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cr)
+selectCodeEditor("JSTK_SPI_top.v", 57, 401); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("PmodJSTK_Demo.v", 319, 360); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+// Tcl Message: current_project PmodJSTK 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("JSTK_SPI_top.v", 2, 399); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 2, 417); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 3, 433); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 76, 435); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 76, 435, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 23 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("PmodJSTK_Demo.v", 220, 689); // ch (w, cr)
+selectCodeEditor("PmodJSTK_Demo.v", 220, 689, false, false, false, false, true); // ch (w, cr) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Binary_To_BCD.v", 8); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 136, 440); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 83, 434); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 83, 434, false, false, false, false, true); // ch (w, cr) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 117 MB. Current time: 2/19/21, 12:20:40 PM PST
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ssdCtrl.v", 6); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PmodJSTK.v", 5); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 122, 472); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("JSTK_SPI_top.v", 190, 429); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 188, 485); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("JSTK_SPI_top.v", 47, 442); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 66, 413); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("JSTK_SPI_top.v", 71, 246); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 70, 270); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 76, 282); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 71, 282); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 112, 293); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 65, 315); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 68, 315); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 122, 348); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 126, 348); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 75, 366); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 77, 386); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 79, 403); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 284, 421); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 281, 399); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 235, 436); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 146, 333); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 209, 384); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 148, 336); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 297, 402); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 161, 462); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 43, 420); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 44, 447); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 47, 438); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 11, 422); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 0, 417); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 21 seconds
+selectCodeEditor("JSTK_SPI_top.v", 227, 445); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 254, 450); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 292, 484); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 632, 435); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 10, 465); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 7, 467); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 194, 450); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 330, 398); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 584, 459); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 423, 328); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 107, 425); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 29, 413); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("PmodJSTK.v", 174, 211); // ch (w, cr)
+selectCodeEditor("PmodJSTK.v", 174, 211, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("JSTK_SPI_top.v", 81, 269); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 76, 267); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 140, 282); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 140, 297); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 141, 319); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 84, 261); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 150, 328); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 89, 285); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 76, 286); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("JSTK_SPI_top.v", 263, 286); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 82, 231); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 77, 234); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("JSTK_SPI_top.v", 190, 361); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 206, 344); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 291, 312); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 248, 405); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 230, 433); // ch (w, cr)
+// Elapsed time: 52 seconds
+selectCodeEditor("JSTK_SPI_top.v", 62, 468); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 61, 416); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 234, 469); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 274, 225); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 260, 138); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 143, 181); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 142, 168); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 139, 147); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 143, 128); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 137, 111); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 125, 154); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 147, 89); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 252, 156); // ch (w, cr)
+// Elapsed time: 12 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ClkDiv_5Hz.v", 6, false, true); // i (h, cr) - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H (aI, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Binary_To_BCD.v", 6, false, true); // i (h, cr) - Double Click
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // H (aI, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// k (cr): Text Changed: addNotify
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B (i, cr)
+selectButton(RDIResource.ConfirmSaveTextEditsDialog_YES, "Yes"); // a (k)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Text Changed"); // k (cr)
+// TclEventType: DESIGN_STALE
+// TclEventType: FILE_SET_CHANGE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectButton(PAResourceOtoP.ProjectTab_RELOAD, "Reload"); // h (ds, cr)
+// bB (cr):  Reloading : addNotify
+// TclEventType: ELABORATE_START
+// Tcl Message: refresh_design 
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (bB)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+// TclEventType: ELABORATE_FAIL
+// Tcl Message: INFO: [Common 17-344] 'source' was cancelled INFO: [Common 17-344] 'refresh_design' was cancelled 
+// CommandFailedException: ERROR: [Common 17-69] Command failed:  
+dismissDialog("Reloading"); // bB (cr)
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cr)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// bB (cr):  Close : addNotify
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 89 MB. Current time: 2/19/21, 12:26:55 PM PST
+// Engine heap size: 1,572 MB. GUI used memory: 89 MB. Current time: 2/19/21, 12:26:55 PM PST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bB (cr)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("JSTK_SPI_top.v", 317, 136); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 314, 124); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 305, 148); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("JSTK_SPI_top.v", 213, 182); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 223, 199); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 234, 229); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 250, 180); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 278, 162); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 332, 254); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("JSTK_SPI_top.v", 239, 141); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 251, 163); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 227, 181); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 216, 199); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 220, 228); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 218, 249); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 217, 263); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 264, 283); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 326, 304); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 317, 325); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 318, 391); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("JSTK_SPI_top.v", 429, 385); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 399, 385); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 420, 391); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 426, 390); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 567, 377); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 196, 399); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPImode0.v", 540, 311); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 204, 415); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 317, 391); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("JSTK_SPI_top.v", 168, 414); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 169, 403); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 149, 382); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 343, 452); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("SPImode0.v", 136, 180); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 177, 159); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 159, 143); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 386, 430); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 217, 437); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("JSTK_SPI_top.v", 92, 457); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PmodJSTK_Demo.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PmodJSTK.v", 2); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 2, 318); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 9, 457); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 177, 410); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 177, 416); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 208, 470); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 198, 417); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 185, 455); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("JSTK_SPI_top.v", 94, 467); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 152, 472); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 109, 496); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 114, 486); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 110, 463); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("JSTK_SPI_top.v", 45, 334); // ch (w, cr)
+selectCodeEditor("PmodJSTK.v", 84, 232); // ch (w, cr)
+typeControlKey((HResource) null, "PmodJSTK.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "PmodJSTK.v", 'c'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 87, 409); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 65, 403); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 81, 438); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 58, 436); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 82, 430); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 27, 352); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 29, 383); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 31, 418); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 24, 431); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 85, 454); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 52, 428); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 33, 487); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 29, 486); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 30, 450); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 306, 366); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 240, 402); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 244, 370); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 231, 364); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 266, 363); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 193, 369); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 247, 359); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 438, 379); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 396, 436); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 317, 321); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 56, 349); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 96, 260); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 149, 280); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 192, 280); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("JSTK_SPI_top.v", 120, 277); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 373, 332); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 493, 389); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 491, 427); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 441, 446); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 616, 230); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 606, 466); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 598, 232); // ch (w, cr)
+selectCodeEditor("PmodJSTK.v", 492, 471); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 84, 283); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 250, 352); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 540, 375); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 105, 280); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 573, 311); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 484, 425); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 490, 445); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 490, 445, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("JSTK_SPI_top.v", 485, 467); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("JSTK_SPI_top.v", 139, 240); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 139, 226); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 916, 227); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 698, 183); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 589, 197); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("JSTK_SPI_top.v", 553, 220); // ch (w, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton("CANCEL", "Cancel"); // JButton (j, c)
+dismissDialog("Add Sources"); // c (cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SPI_Ctrl"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 9 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: current_project JSTK_SPI_rev1 
+// Tcl Message: close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_Ctrl.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_Ctrl.v}} 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPImode0.v", 3); // i (h, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPI_Ctrl (SPI_Ctrl.v)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, SPI_Ctrl (SPI_Ctrl.v)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+// Elapsed time: 17 seconds
+selectCodeEditor("SPI_Ctrl.v", 234, 295); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 170, 208); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 175, 195); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("SPI_Ctrl.v", 5, 214); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 231, 201); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 228, 206); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 150, 208); // ch (w, cr)
+// Elapsed time: 197 seconds
+selectCodeEditor("SPI_Ctrl.v", 138, 79); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 210, 354); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 192, 365); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("SPI_Ctrl.v", 257, 358); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("JSTK_SPI_top.v", 134, 262); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'v'); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 333, 254); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 323, 320); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 125, 427); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 132, 461); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+// Tcl Message: current_project PmodJSTK 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 44, 442); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 86, 499); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 80, 484); // ch (w, cr)
+// Elapsed time: 42 seconds
+selectCodeEditor("SPI_Ctrl.v", 120, 554); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 95, 532); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 86, 535); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 119, 559); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 83, 520); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Ctrl.v", 78, 556); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Ctrl.v", 120, 553); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 84, 524); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 83, 504); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 237, 566); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 210, 540); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("SPI_Ctrl.v", 68, 523); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 68, 523, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 56, 502); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 56, 502, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 54, 472); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 54, 472, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 132, 448); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 140, 435); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 143, 414); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 84, 543); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPI_Ctrl.v", 229, 539); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 97, 532); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 87, 540); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 179, 526); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 109, 427); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("JSTK_SPI_top.v", 227, 430); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 210, 461); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 150, 490); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 216, 462); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project JSTK_SPI_rev1 
+selectCodeEditor("JSTK_SPI_top.v", 150, 484); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 110, 430); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("JSTK_SPI_top.v", 182, 159); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 179, 177); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 181, 190); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 180, 178); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 244, 221); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("JSTK_SPI_top.v", 261, 319); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 114, 415); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 119, 446); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 161, 558); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 249, 550); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 174, 558); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 147, 577); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 0, 364); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("JSTK_SPI_top.v", 606, 412); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 2, 364); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 9, 544); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 1, 553, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 2, 553); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 154, 508); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 165, 535); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 137, 525); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 0, 262); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 1, 283); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 3, 299); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 2, 314); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 2, 347); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 2, 369, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 1, 368); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 6, 373); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 0, 370); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 3, 382); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 3, 397); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 63, 303); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 309, 430); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 143, 517); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 507); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 137, 532); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 144, 514); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPI_Ctrl.v", 80, 349); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 85, 364); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 75, 369); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 81, 382); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 77, 385); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 75, 400); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 105, 354); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 165, 367); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 162, 366); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 164, 400); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 319); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Ctrl.v", 79, 317); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 171, 318); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 178, 315); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 140, 296); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 288); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 144, 271); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 138, 268); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 271, 380); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 194, 437); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 146, 585); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 210, 131); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 159, 144); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 152, 126); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 153, 177); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 157, 192); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 238, 206); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 128, 541); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 110, 516); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 59, 520); // ch (w, cr)
+// Elapsed time: 69 seconds
+selectCodeEditor("SPI_Ctrl.v", 164, 542); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPI_Ctrl.v", 59, 553); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 354, 571); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 338, 556); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Ctrl.v", 104, 556); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 252, 559); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("SPI_Ctrl.v", 84, 400); // ch (w, cr)
+// Elapsed time: 39 seconds
+selectCodeEditor("SPI_Ctrl.v", 204, 580); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 211, 583); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 405, 522); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 417, 450); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 360, 441); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 344, 460); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 339, 487); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 312, 466); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 297, 501); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 309, 483); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 313, 465); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 314, 550); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 300, 581); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 234, 607); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("spiCtrl.v", 369, 385); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 369, 385, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 30 seconds
+selectCodeEditor("SPI_Ctrl.v", 202, 556); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 129, 550); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 129, 550, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 39 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v), JSTK2 : xil_defaultlib.SPI_CTRL]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v), SPI_Ctrl (SPI_Ctrl.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v), SPI_Ctrl (SPI_Ctrl.v)]", 4, false, false, false, false, true, false); // B (F, cr) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // af (ao, cr)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // af (ao, cr)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ai (ao, cr)
+selectCodeEditor("SPI_Ctrl.v", 86, 75); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Ctrl.v", 119, 286); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 797, 554); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 107, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 169, 552); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("spiCtrl.v", 214, 394); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 669, 557); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectCodeEditor("SPI_Ctrl.v", 133, 548); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 122, 572); // ch (w, cr)
+// Elapsed time: 34 seconds
+selectCodeEditor("SPI_Ctrl.v", 264, 157); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 479, 275); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 435, 318); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 258, 314); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 249, 161); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Ctrl.v", 163, 482); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 216, 480); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 260, 496); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 261, 488); // ch (w, cr)
+// Elapsed time: 46 seconds
+selectCodeEditor("SPI_Ctrl.v", 243, 437); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 267, 362); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 263, 387); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 271, 371); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 277, 386); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 259, 373); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 260, 369); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 251, 368); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 216, 461); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 212, 440); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 213, 455); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("SPI_Ctrl.v", 101, 537); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("SPI_Ctrl.v", 220, 548); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 225, 536); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 213, 552); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("SPI_Ctrl.v", 222, 592); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 90 MB. Current time: 2/19/21, 12:56:55 PM PST
+// Elapsed time: 38 seconds
+selectCodeEditor("SPI_Ctrl.v", 162, 384); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 292, 525); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Ctrl.v", 177, 301); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 210, 327); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 253, 458); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 291, 507); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPI_Ctrl.v", 86, 263); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 82, 259); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 467); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 86, 481); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 81, 500); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 81, 523); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 85, 531); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 88, 549); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 84, 554); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 87, 566); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 116, 483); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 112, 488); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 112, 503); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 112, 516); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 114, 536); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 113, 553); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 115, 573); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 261, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 252, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 243, 473); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 259, 428); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 297, 439); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 281, 449); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 234, 455); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 252, 448); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 360, 432); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 237, 424); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 279, 400); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 319, 410); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 198, 381); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 396, 560); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 336, 476); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("SPI_Ctrl.v", 402, 486); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 390, 531); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 363, 548); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 209, 511); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 194, 494); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 161, 500); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 61, 503); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 171, 510); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 202, 515); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 164, 499); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 281, 364); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("SPI_Ctrl.v", 537, 462); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 470, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 508, 487); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 339, 563); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 236, 526); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 233, 511); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 227, 503); // ch (w, cr)
+// Elapsed time: 51 seconds
+selectCodeEditor("SPI_Ctrl.v", 259, 342); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 203, 158); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 262, 174); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 207, 165); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 200, 53); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 126, 184); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 300, 314); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 299, 368); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 286, 368); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 417, 277); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 249, 278); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 289, 313); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 422, 314); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 348, 301); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 362, 362); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 369, 459); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 476, 459); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 336, 295); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 338, 284); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 441, 417); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 516, 521); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 470, 564); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 413, 524); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 338, 465); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 782, 458); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 758, 479); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 719, 478); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 662, 470); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 210, 485); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 136, 480); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 488); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Ctrl.v", 273, 478); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 235, 448); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 360, 283); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 330, 283); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 222, 506); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 146, 500); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPI_Ctrl.v", 223, 488); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 223, 488, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 267, 500); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 147, 450); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 255, 503); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 236, 481); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 222, 483); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 216, 482); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 368, 495); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 309, 480); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 273, 487); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 257, 487); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 245, 484); // ch (w, cr)
+// Elapsed time: 91 seconds
+selectCodeEditor("spiCtrl.v", 369, 319); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 314, 496); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 148, 507); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 135, 502); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 140, 503); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("SPI_Ctrl.v", 312, 466); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 142, 474); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 139, 465); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 210, 531); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 299, 469); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Ctrl.v", 637, 463); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 198, 539); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Ctrl.v", 221, 544); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_Ctrl.v", 220, 540); // ch (w, cr)
+// Elapsed time: 32 seconds
+selectCodeEditor("SPI_Ctrl.v", 361, 414); // ch (w, cr)
+// Elapsed time: 49 seconds
+selectCodeEditor("SPI_Ctrl.v", 110, 343); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 110, 343, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 134, 356); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 134, 356, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 163, 163); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 163, 163, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 172, 398); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 172, 398, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 214, 477); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 214, 477, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 214, 550); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 214, 550, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 296, 486); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 296, 486, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 320, 555); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 320, 555, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 274, 249); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 193, 199); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 370, 451); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 364, 450); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 639, 382); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 463, 384); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 940, 342); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 940, 342, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 787, 388); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 544, 381); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 541, 381); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 654, 412); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 402, 377); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 495, 430); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 467, 366); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 601, 421); // ch (w, cr)
+// Elapsed time: 25 seconds
+selectCodeEditor("SPI_Ctrl.v", 325, 246); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 178, 235); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 58, 400); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 100, 366); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 2, 330); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 580, 176); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 29, 211); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 226, 229); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 228, 232); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 225, 223); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 295, 284); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "JSTK_SPI_top.v", 1); // i (h, cr)
+selectCodeEditor("JSTK_SPI_top.v", 70, 356); // ch (w, cr)
+selectCodeEditor("JSTK_SPI_top.v", 56, 349); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 291); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 55, 328); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 55, 347); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 430, 327); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 157, 334); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 286, 379); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 115, 263); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 94, 259); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 110, 263); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 110, 279); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 110, 292); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 65, 353); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 287, 171); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 418, 146); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 361, 232); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 360, 362); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 54, 60); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 73, 314); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 66, 316); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 166, 334); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 190, 331); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 235, 334); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 588, 354); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 371, 331); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 165, 330); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 160, 331); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 383, 321); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 375, 336); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("SPI_Ctrl.v", 163, 348); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 157, 346); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 154, 354); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 419, 350); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 366, 418); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 397, 340); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 384, 336); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 545, 322); // ch (w, cr)
+// Elapsed time: 163 seconds
+selectCodeEditor("SPI_Ctrl.v", 162, 476); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 277); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 173, 454); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 751, 315); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 126, 487); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 154, 496); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Ctrl.v", 393, 415); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 140, 415); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 455, 399); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 463, 407); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 429, 376); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 414, 429); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 405, 429); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 400, 437); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 404, 137); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 416, 124); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 412, 160); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 160, 150); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 322, 205); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 385, 337); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 616, 442); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 334, 145); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 640, 451); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 88 MB. Current time: 2/19/21, 1:26:56 PM PST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 88 MB. Current time: 2/19/21, 1:56:56 PM PST
+// Elapsed time: 3459 seconds
+selectCodeEditor("spiCtrl.v", 951, 409); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 377, 482); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 58, 160); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 73, 485); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 71, 482); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 69, 482); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("SPI_Ctrl.v", 154, 452); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 355, 449); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 410, 468); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 455); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 148, 454); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 60, 457); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 54, 458); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 130, 455); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 59, 464); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 54, 478); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 73, 470); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 258, 523); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 113, 487); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectCodeEditor("SPI_Ctrl.v", 226, 421); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 210, 498); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 140, 196); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 503); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 174, 554); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 174, 554, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 221, 558); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 226, 561); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 232, 548); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 232, 548, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 310, 555); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Ctrl.v", 145, 263); // ch (w, cr)
+// Elapsed time: 19 seconds
+selectCodeEditor("SPI_Ctrl.v", 562, 440); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 269, 507); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 188, 201); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 188, 201, false, true, false, false, true); // ch (w, cr) - Control Key - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 300, 506); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPI_Ctrl.v", 799, 530); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 775, 527); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 765, 523); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("SPI_Ctrl.v", 585, 535); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 576, 552); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 637, 542); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 625, 552); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("SPI_Ctrl.v", 73, 301); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 97, 504); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 86, 502); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 75, 503); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 78, 523); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 234, 537); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 129, 532); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 127, 529); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 140, 537); // ch (w, cr)
+// Elapsed time: 158 seconds
+selectCodeEditor("spiCtrl.v", 250, 377); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 237, 424); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 132, 335); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 125, 341); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 148, 326); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectCodeEditor("SPI_Ctrl.v", 319, 500); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 505, 509); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectCodeEditor("SPI_Ctrl.v", 187, 482); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("SPI_Ctrl.v", 273, 549); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 261, 525); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 253, 540); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 368); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("SPI_Ctrl.v", 169, 486); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 139, 265); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 283, 317); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 278, 284); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 353, 364); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 259, 324); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 138, 331); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 343, 371); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 310, 349); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 222, 359); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 142, 364); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 739, 386); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 277, 248); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 265, 231); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 292, 209); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 278, 195); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 457, 351); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 298, 368); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 466, 431); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 307, 472); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 142, 245); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 247, 329); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 205, 305); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Ctrl.v", 260, 351); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 171, 304); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 134, 359); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 542, 347); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 763, 353); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 284, 326); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 146, 290); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 304, 350); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 339, 290); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 457, 365); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 457, 368); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 475, 335); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 231, 353); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 136, 351); // ch (w, cr)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 697, 494); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 399, 436); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 393, 449); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 280, 367); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 283, 383); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 454); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 431, 400); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 144, 467); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 439, 518); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 178, 479); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 248); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 140, 480); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 142, 504); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 139, 518); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 139, 533); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 139, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 286, 548); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 316, 563); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 317, 557); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 138, 345); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 309, 552); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 292, 499); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 335, 490); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 238, 488); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 342, 496); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 301, 495); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 282, 484); // ch (w, cr)
+// Elapsed time: 59 seconds
+selectCodeEditor("SPI_Ctrl.v", 125, 162); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 135, 167); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 135, 167, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 436, 484); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 436, 484, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 773, 491); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 770, 485); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 750, 515); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 109, 521); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 88, 536); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 153, 517); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 144, 503); // ch (w, cr)
+// Elapsed time: 60 seconds
+selectCodeEditor("SPI_Ctrl.v", 70, 296); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 76, 521); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 76, 531); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 79, 539); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 127, 488); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 143, 484); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 416, 487); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("SPI_Ctrl.v", 172, 291); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 220, 248); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 218, 235); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 344, 137); // ch (w, cr)
+typeControlKey((HResource) null, "spiCtrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "spiCtrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 220, 227); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 220, 227, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 233, 228); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 233, 228, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 234, 228); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 229); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 151, 229, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 241, 230); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 241, 230, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 269, 272); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 400, 224); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 352, 233); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 627, 231); // ch (w, cr)
+// Elapsed time: 30 seconds
+selectCodeEditor("SPI_Ctrl.v", 532, 405); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 539, 299); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 248, 304); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 479, 293); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 567, 357); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 599, 344); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 88 MB. Current time: 2/19/21, 2:26:56 PM PST
+selectCodeEditor("SPI_Ctrl.v", 344, 173); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 344, 173, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 565, 173); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 590, 318); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 271, 517); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 217, 80); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 209, 316); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 175, 76); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 175, 76, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 214, 80); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 331, 81); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 415, 305); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 412, 310); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 609, 377); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 601, 338); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 716, 314); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 615, 359); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 388, 329); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 558, 311); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 441, 374); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 326, 331); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 132, 316); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 231, 398); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 160, 316); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 391, 479); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 472, 519); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 478, 497); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 199, 509); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 199, 510); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("SPI_Ctrl.v", 133, 297); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 160, 341); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 130, 316); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 166, 356); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 133, 314); // ch (w, cr)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 126, 542); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 136, 554); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPI_Ctrl.v", 130, 368); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 359, 554); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 178, 329); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 175, 350); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 135, 349); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 201, 586); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 133, 230); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 134, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 133, 554); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 169, 281); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 169, 281, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 214, 505); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 195, 502); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 191, 509); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 168, 506); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 296, 503); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 292, 499); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 349, 491); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 152, 179); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 161, 194); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 157, 215); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 163, 276); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 163, 276, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 346, 437); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 165, 200); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 165, 200); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 147, 173); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 148, 233); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 139, 246); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 152, 294); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 152, 287); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 343, 512); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 474, 437); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 682, 476); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 427, 510); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 127, 413); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 138, 432); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 190, 453); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 183, 468); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 138, 486); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 187, 469); // ch (w, cr)
+selectCodeEditor("spiCtrl.v", 141, 437); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 183, 364); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 169, 384); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 172, 402); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 257, 398); // ch (w, cr)
+// Elapsed time: 28 seconds
+selectCodeEditor("SPI_Ctrl.v", 169, 421); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 254, 432); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 209, 410); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 245, 440); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 228, 415); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 228, 415, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 378, 509); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPI_Ctrl.v", 148, 533); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 500, 517); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 373, 482); // ch (w, cr)
+// Elapsed time: 27 seconds
+selectCodeEditor("SPI_Ctrl.v", 467, 468); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 468, 488); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 479, 467); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 494, 498); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("SPI_Ctrl.v", 322, 497); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 602, 548); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Ctrl.v", 151, 541); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 141, 524); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("SPI_Ctrl.v", 70, 309); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 127, 530); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 122, 552); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 181, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 123, 551); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 121, 552); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 370, 602); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 350, 577); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 348, 594); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 163, 504); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 170, 506); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 573, 566); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Ctrl.v", 457, 297); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 114, 277); // ch (w, cr)
+// Elapsed time: 11 seconds
+selectCodeEditor("SPI_Ctrl.v", 529, 280); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 529, 280, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 469, 309); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 505, 296); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 370, 149); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 521, 140); // ch (w, cr)
+// Elapsed time: 31 seconds
+selectCodeEditor("SPI_Ctrl.v", 492, 151); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPI_Ctrl.v", 286, 96); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 493, 94); // ch (w, cr)
+// Elapsed time: 40 seconds
+selectCodeEditor("SPI_Ctrl.v", 703, 109); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 114, 113); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 118, 113, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_Ctrl.v", 526, 111); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 451, 255); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 178, 404); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Ctrl.v", 147, 140); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 116, 106); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 121, 152); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 205, 107); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 187, 143); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 181, 161); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 169, 207); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 114, 372); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 136, 424); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 114, 435); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1, true, false, false, false, false, true); // B (F, cr) - Double Click - Node
+selectCodeEditor("JSTK_SPI_top.v", 246, 104); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "JSTK_SPI_top.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v)]", 1); // B (F, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E (f, cr)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (E, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "SPI_tx_rx"); // ac (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c (cr)
+// Tcl Message: close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_tx_rx.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_tx_rx.v}} 
+// I (cr): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+setText(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "SPI_TX_RX"); // ac (Q, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+dismissDialog("Define Module"); // I (cr)
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v), JSTK1 : SPI_TX_RX (SPI_tx_rx.v)]", 2, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, JSTK_SPI_top (JSTK_SPI_top.v), JSTK1 : SPI_TX_RX (SPI_tx_rx.v)]", 2, false, false, false, false, false, true); // B (F, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 83, 392); // ch (w, cr)
+// Elapsed time: 194 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 31, 398); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 27, 401); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 29, 403); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 155, 386); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 174, 409); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 174, 409, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 251, 446); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 215, 467); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 179, 555); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 179, 555, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 186, 446); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 186, 446, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 151, 448); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 185, 452); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 276, 454); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 272, 471); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 247, 458); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 252, 553); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 234, 444); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 234, 444, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 242, 465); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 242, 465, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 292, 473); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 246, 483); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 178, 484); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 119, 485); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 160, 488); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 176, 487); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 176, 487, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 221, 497); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 221, 497, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 145, 514); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 168, 522); // ch (w, cr)
+typeControlKey(null, null, 'z');
+selectCodeEditor("SPI_tx_rx.v", 146, 520); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 182, 525); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 163, 515); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 187, 531); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 152, 566); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 145, 548); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 255, 527); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 231, 500); // ch (w, cr)
+// Elapsed time: 22 seconds
+selectCodeEditor("SPI_tx_rx.v", 286, 518); // ch (w, cr)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPImode0.v", 3); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spiCtrl.v", 4); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPImode0.v", 3); // i (h, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPI_tx_rx.v", 227, 434); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 191, 520); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 206, 528); // ch (w, cr)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 187, 470); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 175, 458); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 187, 467); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 169, 434); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 173, 447); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 173, 424); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 272, 344); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 272, 344, false, false, false, false, true); // ch (w, cr) - Double Click
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 236, 500); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 88, 556); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 89, 515); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 89, 515, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 175, 515); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 89, 497); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 89, 497, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 173, 500); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 202, 548); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 86, 539); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 86, 539); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 86, 539, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 173, 535); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 237, 538); // ch (w, cr)
+// Elapsed time: 14 seconds
+selectCodeEditor("SPI_tx_rx.v", 261, 454); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 215, 437); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 260, 450); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 268, 503); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 241, 527); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 431, 537); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 154, 562); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 152, 554); // ch (w, cr)
+// Elapsed time: 18 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 4, 112); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 283, 122); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 1, 112); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 2, 554); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'v'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 319, 227); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 206, 331); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 206, 331, false, false, false, false, true); // ch (w, cr) - Double Click
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 341, 489); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'v'); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_Ctrl.v", 786, 485); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 417, 495); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 635, 557); // ch (w, cr)
+// Elapsed time: 23 seconds
+selectCodeEditor("SPI_tx_rx.v", 2, 565); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 1, 585); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 2, 602); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 122, 602); // ch (w, cr)
+// Elapsed time: 119 seconds
+selectCodeEditor("SPI_tx_rx.v", 38, 476); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 33, 473); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 59, 101); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 59, 104); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 245, 435); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 140, 110); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 287, 188); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 172, 537); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 314, 368); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+// Elapsed time: 127 seconds
+selectCodeEditor("SPImode0.v", 279, 229); // ch (w, cr)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "spiCtrl.v", 4); // i (h, cr)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 4, 342); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 0, 348); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 0, 534); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'v'); // ch (w, cr)
+// Elapsed time: 17 seconds
+selectCodeEditor("SPImode0.v", 33, 159); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 26, 160); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+// Elapsed time: 13 seconds
+selectCodeEditor("SPImode0.v", 277, 249); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 27, 284); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+// Elapsed time: 26 seconds
+selectCodeEditor("SPImode0.v", 273, 385); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 309, 453); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 235, 486); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 294, 490); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 276, 546); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 1, 473); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 136, 216); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 174, 65); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 83, 45); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 756, 159); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_Ctrl.v", 2); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 103, 345); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 58, 93); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 641, 372); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 58, 354); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+// Elapsed time: 42 seconds
+selectCodeEditor("SPImode0.v", 467, 412); // ch (w, cr)
+// Elapsed time: 10 seconds
+selectCodeEditor("SPImode0.v", 0, 30); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPImode0.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 228, 118); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PmodJSTK.v", 2); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "PmodJSTK_Demo.v", 1); // i (h, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPImode0.v", 3); // i (h, cr)
+selectCodeEditor("SPI_Ctrl.v", 916, 102); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 28, 94); // ch (w, cr)
+selectCodeEditor("SPI_Ctrl.v", 1, 62); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_Ctrl.v", 'c'); // ch (w, cr)
+// Elapsed time: 96 seconds
+selectCodeEditor("SPI_Ctrl.v", 273, 463); // ch (w, cr)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "SPI_tx_rx.v", 3); // i (h, cr)
+selectCodeEditor("SPI_tx_rx.v", 181, 547); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 260, 460); // ch (w, cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 88 MB. Current time: 2/19/21, 2:56:57 PM PST
+// Elapsed time: 68 seconds
+selectCodeEditor("SPI_tx_rx.v", 202, 499); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 111, 491); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 205, 507); // ch (w, cr)
+// Elapsed time: 38 seconds
+selectCodeEditor("SPI_tx_rx.v", 271, 520); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'c'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 306, 538); // ch (w, cr)
+typeControlKey((HResource) null, "SPI_tx_rx.v", 'v'); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 571, 537); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 571, 537, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 540, 577); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 250, 468); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 141, 381); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 124, 386); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 239, 415); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 127, 541); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 319, 550); // ch (w, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_tx_rx.v", 316, 553); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 220, 576); // ch (w, cr)
+// Elapsed time: 43 seconds
+selectCodeEditor("SPI_tx_rx.v", 232, 561); // ch (w, cr)
+// Elapsed time: 21 seconds
+selectCodeEditor("SPImode0.v", 195, 381); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 195, 381, false, false, false, false, true); // ch (w, cr) - Double Click
+selectCodeEditor("SPI_tx_rx.v", 52, 478); // ch (w, cr)
+// Elapsed time: 20 seconds
+selectCodeEditor("SPI_tx_rx.v", 196, 545); // ch (w, cr)
+// Elapsed time: 16 seconds
+selectCodeEditor("SPI_tx_rx.v", 264, 531); // ch (w, cr)
+// Elapsed time: 77 seconds
+selectCodeEditor("SPImode0.v", 517, 334); // ch (w, cr)
+// Elapsed time: 73 seconds
+selectCodeEditor("SPI_tx_rx.v", 407, 415); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 409, 431); // ch (w, cr)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E (f, cr)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("SPI_tx_rx.v", 171, 103); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 166, 119); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 247, 176); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 235, 209); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 226, 241); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 233, 284); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 241, 289); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 268, 334); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 452, 347); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 415, 325); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 416, 277); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 408, 223); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 384, 162); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 378, 106); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 379, 76); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 413, 19); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 605, 22); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 543, 358); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 581, 327); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 507, 430); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 493, 464); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 493, 485); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 514, 328); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 472, 331); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 493, 403); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 468, 418); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 470, 444); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 468, 429); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 472, 469); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 473, 469); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 467, 435); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 470, 416); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 465, 398); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 460, 522); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 490, 214); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 474, 232); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 437, 33); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 460, 22); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 451, 324); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 468, 289); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 468, 274); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 463, 368); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 493, 469); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 471, 500); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 465, 520); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 450, 533); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 452, 322); // ch (w, cr)
+selectCodeEditor("SPI_tx_rx.v", 451, 329); // ch (w, cr)
+selectCodeEditor("SPImode0.v", 905, 417); // ch (w, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+// Tcl Message: current_project PmodJSTK 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v)]", 2, true); // B (F, cr) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Int : spiMode0 (SPImode0.v)]", 4, false); // B (F, cr)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PmodJSTK_Demo (PmodJSTK_Demo.v), PmodJSTK_Int : PmodJSTK (PmodJSTK.v), SPI_Ctrl : spiCtrl (spiCtrl.v)]", 3, false); // B (F, cr)
+// Elapsed time: 36 seconds
+closeMainWindow("JSTK_SPI_rev1 - [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.xpr] - Vivado 2019.2"); // cr
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify
+// A (cr): Close Project: addNotify
+dismissDialog("Save Project"); // al (cr)
+// Tcl Message: current_project JSTK_SPI_rev1 
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bB (cr):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // A (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,572 MB. GUI used memory: 84 MB. Current time: 2/19/21, 3:04:32 PM PST
+// Tcl Message: close_project 
+dismissDialog("Close Project"); // bB (cr)
+closeMainWindow("PmodJSTK - [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.xpr] - Vivado 2019.2"); // cr
+// al (cr): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bB (cr):  Save Constraints : addNotify

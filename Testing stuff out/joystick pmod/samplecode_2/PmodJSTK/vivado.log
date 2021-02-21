@@ -1,0 +1,217 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Feb 19 10:10:19 2021
+# Process ID: 15892
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent31356 C:\Users\George\Desktop\Github\Bronco Pong\Testing stuff out\joystick pmod\samplecode_2\PmodJSTK\PmodJSTK.xpr
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/vivado.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK'
+INFO: [Project 1-313] Project file moved from 'C:/Users/kfranz/Desktop/PmodJSTK' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'PmodJSTK.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 929.000 ; gain = 218.207
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: PmodJSTK_Demo
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+WARNING: [Synth 8-6901] identifier 'Idle' is used before its declaration [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:57]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1388.770 ; gain = 223.551
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK_Demo' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Wait bound to: 3'b010 
+	Parameter Check bound to: 3'b011 
+	Parameter Done bound to: 3'b100 
+	Parameter byteEndVal bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27]
+INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37]
+	Parameter Idle bound to: 2'b00 
+	Parameter Init bound to: 2'b01 
+	Parameter RxTx bound to: 2'b10 
+	Parameter Done bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (2#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+	Parameter cntEndVal bound to: 10'b1011101110 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28]
+	Parameter cntEndVal bound to: 16'b1100001101010000 
+INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Shift bound to: 3'b011 
+	Parameter Check bound to: 3'b010 
+	Parameter Done bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'Binary_To_BCD' (5#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'ssdCtrl' (6#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_5Hz' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+	Parameter cntEndVal bound to: 24'b100110001001011010000000 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (7#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK_Demo' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1437.762 ; gain = 272.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.762 ; gain = 272.543
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1437.762 ; gain = 272.543
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1437.762 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1558.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:18 ; elapsed = 00:00:12 . Memory (MB): peak = 1608.059 ; gain = 442.840
+23 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:19 . Memory (MB): peak = 1608.059 ; gain = 678.016
+refresh_design
+WARNING: [Synth 8-6901] identifier 'Idle' is used before its declaration [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:57]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1647.789 ; gain = 29.008
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK_Demo' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+INFO: [Synth 8-6157] synthesizing module 'PmodJSTK' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'spiCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Wait bound to: 3'b010 
+	Parameter Check bound to: 3'b011 
+	Parameter Done bound to: 3'b100 
+	Parameter byteEndVal bound to: 3'b101 
+INFO: [Synth 8-6155] done synthesizing module 'spiCtrl' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/spiCtrl.v:27]
+INFO: [Synth 8-6157] synthesizing module 'spiMode0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37]
+	Parameter Idle bound to: 2'b00 
+	Parameter Init bound to: 2'b01 
+	Parameter RxTx bound to: 2'b10 
+	Parameter Done bound to: 2'b11 
+INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:184]
+INFO: [Synth 8-6155] done synthesizing module 'spiMode0' (2#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/SPImode0.v:37]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_66_67kHz' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+	Parameter cntEndVal bound to: 10'b1011101110 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_66_67kHz' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_66_67kHz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ssdCtrl' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28]
+	Parameter cntEndVal bound to: 16'b1100001101010000 
+INFO: [Synth 8-6157] synthesizing module 'Binary_To_BCD' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30]
+	Parameter Idle bound to: 3'b000 
+	Parameter Init bound to: 3'b001 
+	Parameter Shift bound to: 3'b011 
+	Parameter Check bound to: 3'b010 
+	Parameter Done bound to: 3'b110 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'Binary_To_BCD' (5#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/Binary_To_BCD.v:30]
+INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:144]
+INFO: [Synth 8-6155] done synthesizing module 'ssdCtrl' (6#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ssdCtrl.v:28]
+INFO: [Synth 8-6157] synthesizing module 'ClkDiv_5Hz' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+	Parameter cntEndVal bound to: 24'b100110001001011010000000 
+INFO: [Synth 8-6155] done synthesizing module 'ClkDiv_5Hz' (7#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/ClkDiv_5Hz.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'PmodJSTK_Demo' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/PmodJSTK_Demo.v:38]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1674.820 ; gain = 56.039
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1697.648 ; gain = 78.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1697.648 ; gain = 78.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1697.648 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/samplecode_2/PmodJSTK/PmodJSTK.srcs/constrs_1/new/PmodJSTK_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:10 . Memory (MB): peak = 1714.156 ; gain = 95.375
+create_project JSTK_SPI_rev1 {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1} -part xc7z020clg400-3
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2019.2/data/ip'.
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1717.859 ; gain = 3.703
+file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new
+file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new
+file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new
+file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new
+file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new
+file mkdir C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new
+file mkdir {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new}
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/JSTK_SPI_top.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/JSTK_SPI_top.v}}
+update_compile_order -fileset sources_1
+current_project PmodJSTK
+refresh_design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+INFO: [Common 17-344] 'refresh_design' was cancelled
+close_design
+current_project JSTK_SPI_rev1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_Ctrl.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_Ctrl.v}}
+update_compile_order -fileset sources_1
+current_project PmodJSTK
+current_project JSTK_SPI_rev1
+update_compile_order -fileset sources_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_tx_rx.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.srcs/sources_1/new/SPI_tx_rx.v}}
+update_compile_order -fileset sources_1
+current_project PmodJSTK
+current_project JSTK_SPI_rev1
+close_project
+exit
