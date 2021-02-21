@@ -26,7 +26,7 @@
 module PMOD_SampleGen(
     Clk,											// 100MHz onbaord clock
     reset_n,										// Reset
-    sndRec										    // New clock output
+    sndRec										    // 100 Hz sample rate
     );
 
 // ===========================================================================
@@ -44,7 +44,7 @@ module PMOD_SampleGen(
 	reg sndRec;
 	
 	// Value to toggle output clock at
-	parameter cntEndVal = 24'h989680;
+	parameter cntEndVal = 24'hF4240; // 100 Hz       
 	// Current count
 	reg [23:0] clkCount = 24'h000000;
 	

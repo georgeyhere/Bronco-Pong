@@ -53,7 +53,7 @@ module JSTK_SPI_top(
 		//-----------------------------------------------
         SPI_TX_RX JSTK1 (
         .Clk(Clk),
-        .reset_n(reset_n),
+        .reset_n(~reset_n),
         .MISO(MISO),
         .Tx_Rx_Start(Tx_Rx_Start),
         .Din(Tx_Data),
@@ -68,7 +68,7 @@ module JSTK_SPI_top(
 		//-----------------------------------------------
         SPI_CTRL JSTK2(
         .Clk(Clk),
-        .reset_n(reset_n),
+        .reset_n(~reset_n),
         .Busy(Busy),
         .Din(Din),
         .Rx_Data(Rx_Data),
@@ -85,17 +85,17 @@ module JSTK_SPI_top(
 		//-----------------------------------------------
         PMOD_SCLK_Div JSTK3(
         .Clk(Clk),
-        .reset_n(reset_n),
+        .reset_n(~reset_n),
         .SCLK(SCLK)
         );
         
         //-----------------------------------------------
-	    // PMOD_SAMPLEGen generates 120 Hz pulse for SPI_Ctrl sndRec
+	    // PMOD_SAMPLEGen generates 100 Hz pulse for SPI_Ctrl sndRec
 	    // SCLK controls the *frequency* of data transmission ! ! !
 		//-----------------------------------------------
         PMOD_SampleGen JSTK4(
         .Clk(Clk),
-        .reset_n(reset_n),
+        .reset_n(~reset_n),
         .sndRec(sndRec)
         );
           

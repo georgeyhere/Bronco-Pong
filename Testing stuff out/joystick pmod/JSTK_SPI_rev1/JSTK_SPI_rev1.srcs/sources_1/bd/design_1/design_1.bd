@@ -1,0 +1,83 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-3",
+      "name": "design_1",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2"
+    },
+    "design_tree": {
+      "ila_0": ""
+    },
+    "interface_ports": {
+      "SLOT_0_AXI_0": {
+        "mode": "Monitor",
+        "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+        "parameters": {
+          "DATA_WIDTH": {
+            "value": "32"
+          },
+          "PROTOCOL": {
+            "value": "AXI4"
+          },
+          "ID_WIDTH": {
+            "value": "1"
+          },
+          "ADDR_WIDTH": {
+            "value": "32"
+          },
+          "AWUSER_WIDTH": {
+            "value": "1"
+          },
+          "ARUSER_WIDTH": {
+            "value": "1"
+          },
+          "WUSER_WIDTH": {
+            "value": "1"
+          },
+          "RUSER_WIDTH": {
+            "value": "1"
+          },
+          "BUSER_WIDTH": {
+            "value": "1"
+          },
+          "NUM_READ_OUTSTANDING": {
+            "value": "2"
+          },
+          "NUM_WRITE_OUTSTANDING": {
+            "value": "2"
+          }
+        }
+      }
+    },
+    "ports": {
+      "clk_0": {
+        "type": "clk",
+        "direction": "I"
+      }
+    },
+    "components": {
+      "ila_0": {
+        "vlnv": "xilinx.com:ip:ila:6.2",
+        "xci_name": "design_1_ila_0_0"
+      }
+    },
+    "interface_nets": {
+      "Conn": {
+        "interface_ports": [
+          "SLOT_0_AXI_0",
+          "ila_0/SLOT_0_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk_0",
+          "ila_0/clk"
+        ]
+      }
+    }
+  }
+}
