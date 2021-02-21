@@ -34,7 +34,7 @@ module SPI_CTRL(
     input               Busy,
     input       [7:0]   Din,
     input       [7:0]   Rx_Data,
-    input               Data_Received,
+    input               sndRec,
 
     output reg  [39:0]  Dout,
     output reg          Slave_Select_n, // Slave Select, active low
@@ -89,7 +89,7 @@ module SPI_CTRL(
                     byte_counter <= 3'd0;
                     
                     
-                    FSM_state <= (Tx_Rx_Start) ? s1_Init:s0_Idle; // Go to next state on start
+                    FSM_state <= (sndRec) ? s1_Init:s0_Idle; // Go to next state on start
                 end
                 
         //---------------------------------------------------
@@ -115,7 +115,8 @@ module SPI_CTRL(
                 end
                 
           //---------------------------------------------------
-	      //     s2_Wait: Wait for TX_RX module to be ready:
+	      //                   s2_Wait: 
+	      //        Wait for TX_RX module to be ready
 	      //---------------------------------------------------       
 		        s2_Wait: begin  
                     Dout <= Dout;
@@ -153,7 +154,7 @@ module SPI_CTRL(
 	           
 	               Slave_Select_n <= 1;                              // deselect slave
 	               Dout [39:0] <= out_reg [39:0];                    // assign output to the shift register that we loaded with five bytes
-	               FSM_state <= (Data_Received == 1'b1) ? s0_Idle:s4_Assign; // go back to idle when external Data_Received signal goes high
+	               FSM_state <= (sndRec == 1'b0) ? s0_Idle:s4_Assign; // go back to idle when external Data_Received signal goes high
 	           end
 	           
 	      //---------------------------------------------------
