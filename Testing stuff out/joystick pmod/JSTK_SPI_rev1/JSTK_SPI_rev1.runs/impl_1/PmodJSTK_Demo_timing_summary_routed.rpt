@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Sat Feb 20 23:59:16 2021
+| Date         : Tue Feb 23 12:11:27 2021
 | Host         : DESKTOP-MB5IJCE running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file PmodJSTK_Demo_timing_summary_routed.rpt -pb PmodJSTK_Demo_timing_summary_routed.pb -rpx PmodJSTK_Demo_timing_summary_routed.rpx -warn_on_violation
 | Design       : PmodJSTK_Demo
@@ -131,13 +131,17 @@ Table of Contents
          NA           NA                     NA                   NA           NA           NA                     NA                   NA           NA           NA                      NA                    NA  
 
 
-There are no user specified timing constraints.
+All user specified timing constraints are met.
 
 
 ------------------------------------------------------------------------------------------------
 | Clock Summary
 | -------------
 ------------------------------------------------------------------------------------------------
+
+Clock        Waveform(ns)       Period(ns)      Frequency(MHz)
+-----        ------------       ----------      --------------
+sys_clk_pin  {0.000 5.000}      10.000          100.000         
 
 
 ------------------------------------------------------------------------------------------------

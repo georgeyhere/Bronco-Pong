@@ -1,16 +1,16 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
-----------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date             : Mon Jan 25 16:51:43 2016
-| Host             : WK84 running 64-bit major release  (build 9200)
-| Command          : 
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date             : Sun Feb 21 00:35:28 2021
+| Host             : DESKTOP-MB5IJCE running 64-bit major release  (build 9200)
+| Command          : report_power -file PmodJSTK_Demo_power_routed.rpt -pb PmodJSTK_Demo_power_summary_routed.pb -rpx PmodJSTK_Demo_power_routed.rpx
 | Design           : PmodJSTK_Demo
 | Device           : xc7a35tcpg236-1
-| Design State     : Routed
+| Design State     : routed
 | Grade            : commercial
 | Process          : typical
 | Characterization : Production
-----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Power Report
 
@@ -30,8 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 29.410 (Junction temp exceeded!) |
-| Dynamic (W)              | 28.924                           |
+| Total On-Chip Power (W)  | 27.436 (Junction temp exceeded!) |
+| Design Power Budget (W)  | Unspecified*                     |
+| Power Budget Margin (W)  | NA                               |
+| Dynamic (W)              | 26.950                           |
 | Device Static (W)        | 0.486                            |
 | Effective TJA (C/W)      | 5.0                              |
 | Max Ambient (C)          | 0.0                              |
@@ -41,6 +43,7 @@ Table of Contents
 | Simulation Activity File | ---                              |
 | Design Nets Matched      | NA                               |
 +--------------------------+----------------------------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
 
 
 1.1 On-Chip Components
@@ -49,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.953 |      443 |       --- |             --- |
-|   LUT as Logic |     0.862 |      185 |     20800 |            0.89 |
-|   Register     |     0.056 |      217 |     41600 |            0.52 |
-|   CARRY4       |     0.028 |       10 |      8150 |            0.12 |
+| Slice Logic    |     0.826 |      451 |       --- |             --- |
+|   LUT as Logic |     0.749 |      149 |     20800 |            0.72 |
+|   Register     |     0.047 |      219 |     41600 |            0.53 |
+|   CARRY4       |     0.024 |       10 |      8150 |            0.12 |
 |   BUFG         |     0.006 |        2 |        32 |            6.25 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     0.911 |      310 |       --- |             --- |
-| I/O            |    27.060 |       23 |       106 |           21.70 |
+| Signals        |     0.735 |      317 |       --- |             --- |
+| I/O            |    25.388 |       23 |       106 |           21.70 |
 | Static Power   |     0.486 |          |           |                 |
-| Total          |    29.410 |          |           |                 |
+| Total          |    27.436 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     2.225 |       1.884 |      0.341 |
-| Vccaux    |       1.800 |     1.044 |       0.991 |      0.053 |
-| Vcco33    |       3.300 |     7.654 |       7.653 |      0.001 |
+| Vccint    |       1.000 |     1.923 |       1.582 |      0.341 |
+| Vccaux    |       1.800 |     0.983 |       0.930 |      0.053 |
+| Vcco33    |       3.300 |     7.181 |       7.180 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -135,14 +138,14 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| PmodJSTK_Demo   |    28.924 |
-|   DispCtrl      |     0.808 |
-|     BtoBCD      |     0.445 |
-|   PmodJSTK_Int  |     0.534 |
-|     SPI_Ctrl    |     0.202 |
-|     SPI_Int     |     0.115 |
-|     SerialClock |     0.217 |
-|   genSndRec     |     0.462 |
+| PmodJSTK_Demo   |    26.950 |
+|   DispCtrl      |     0.760 |
+|     BtoBCD      |     0.410 |
+|   PmodJSTK_Int  |     0.367 |
+|     SPI_Ctrl    |     0.024 |
+|     SPI_Int     |     0.137 |
+|     SerialClock |     0.206 |
+|   genSndRec     |     0.380 |
 +-----------------+-----------+
 
 

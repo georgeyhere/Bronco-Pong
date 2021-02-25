@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sat Feb 20 23:59:16 2021
+| Date             : Tue Feb 23 12:11:27 2021
 | Host             : DESKTOP-MB5IJCE running 64-bit major release  (build 9200)
 | Command          : report_power -file PmodJSTK_Demo_power_routed.rpt -pb PmodJSTK_Demo_power_summary_routed.pb -rpx PmodJSTK_Demo_power_routed.rpx
 | Design           : PmodJSTK_Demo
@@ -52,6 +52,7 @@ Table of Contents
 +--------------+-----------+----------+-----------+-----------------+
 | On-Chip      | Power (W) | Used     | Available | Utilization (%) |
 +--------------+-----------+----------+-----------+-----------------+
+| Clocks       |     0.000 |        3 |       --- |             --- |
 | Slice Logic  |     0.000 |        2 |       --- |             --- |
 |   Others     |     0.000 |        2 |       --- |             --- |
 | I/O          |     0.000 |        6 |       125 |            4.80 |

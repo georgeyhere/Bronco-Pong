@@ -1,7 +1,7 @@
 //
 //  Vivado(TM)
 //  ISEWrap.js: Vivado Runs Script for WSH 5.1/5.6
-//  Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved. 
+//  Copyright 1986-1999, 2001-2013,2015 Xilinx, Inc. All Rights Reserved. 
 //
 
 // GLOBAL VARIABLES
@@ -100,7 +100,7 @@ function ISEExec( ISEProg, ISEArgs ) {
     ISETouchFile( ISEStep, "begin" );
 
     // LAUNCH!
-    ISELogFileStr.close();
+    ISELogFileStr.Close();
     ISECmdLine = 
       "%comspec% /c " + ISECmdLine + " >> " + ISELogFile + " 2>&1";
     ISEExitCode = ISEShell.Run( ISECmdLine, 0, true );
@@ -116,6 +116,30 @@ function ISEExec( ISEProg, ISEArgs ) {
     var ISEProcess = ISEShell.Exec( ISECmdLine );
     
     // BEGIN file creation
+    var wbemFlagReturnImmediately = 0x10;
+    var wbemFlagForwardOnly = 0x20;
+    var objWMIService = GetObject ("winmgmts:{impersonationLevel=impersonate, (Systemtime)}!//./root/cimv2");
+    var processor = objWMIService.ExecQuery("SELECT * FROM Win32_Processor", "WQL",wbemFlagReturnImmediately | wbemFlagForwardOnly);
+    var computerSystem = objWMIService.ExecQuery("SELECT * FROM Win32_ComputerSystem", "WQL", wbemFlagReturnImmediately | wbemFlagForwardOnly);
+    var NOC = 0;
+    var NOLP = 0;
+    var TPM = 0;
+
+    var cpuInfos = new Enumerator(processor);
+    for(;!cpuInfos.atEnd(); cpuInfos.moveNext()) {
+        var cpuInfo = cpuInfos.item();
+        NOC += cpuInfo.NumberOfCores;
+        NOLP += cpuInfo.NumberOfLogicalProcessors;
+    }
+    var csInfos = new Enumerator(computerSystem);
+    for(;!csInfos.atEnd(); csInfos.moveNext()) {
+        var csInfo = csInfos.item();
+        TPM += csInfo.TotalPhysicalMemory;
+    }
+
+    var ISEHOSTCORE = NOLP
+    var ISEMEMTOTAL = TPM
+
     var ISENetwork = WScript.CreateObject( "WScript.Network" );
     var ISEHost = ISENetwork.ComputerName;
     var ISEUser = ISENetwork.UserName;
@@ -127,6 +151,8 @@ function ISEExec( ISEProg, ISEArgs ) {
 			    "\" Owner=\"" + ISEUser + 
 			    "\" Host=\"" + ISEHost + 
 			    "\" Pid=\"" + ISEPid +
+			    "\" HostCore=\"" + ISEHOSTCORE +
+			    "\" HostMemory=\"" + ISEMEMTOTAL +
 			    "\">" );
     ISEBeginFile.WriteLine( "    </Process>" );
     ISEBeginFile.WriteLine( "</ProcessHandle>" );
@@ -148,6 +174,8 @@ function ISEExec( ISEProg, ISEArgs ) {
 
     ISEExitCode = ISEProcess.ExitCode;
   }
+
+  ISELogFileStr.Close();
 
   // END/ERROR file creation
   if ( ISEExitCode != 0 ) {    
@@ -186,11 +214,57 @@ function ISETouchFile( ISERoot, ISEStatus ) {
 
   var ISETFile = 
     ISEOpenFile( "." + ISERoot + "." + ISEStatus + ".rst" );
-  ISETFile.close();
+  ISETFile.Close();
 }
 
 function ISEOpenFile( ISEFilename ) {
 
+  // This function has been updated to deal with a problem seen in CR #870871.
+  // In that case the user runs a script that runs impl_1, and then turns around
+  // and runs impl_1 -to_step write_bitstream. That second run takes place in
+  // the same directory, which means we may hit some of the same files, and in
+  // particular, we will open the runme.log file. Even though this script closes
+  // the file (now), we see cases where a subsequent attempt to open the file
+  // fails. Perhaps the OS is slow to release the lock, or the disk comes into
+  // play? In any case, we try to work around this by first waiting if the file
+  // is already there for an arbitrary 5 seconds. Then we use a try-catch block
+  // and try to open the file 10 times with a one second delay after each attempt.
+  // Again, 10 is arbitrary. But these seem to stop the hang in CR #870871.
+  // If there is an unrecognized exception when trying to open the file, we output
+  // an error message and write details to an exception.log file.
   var ISEFullPath = ISERunDir + "/" + ISEFilename;
-  return ISEFileSys.OpenTextFile( ISEFullPath, 8, true );
+  if (ISEFileSys.FileExists(ISEFullPath)) {
+    // File is already there. This could be a problem. Wait in case it is still in use.
+    WScript.Sleep(5000);
+  }
+  var i;
+  for (i = 0; i < 10; ++i) {
+    try {
+      return ISEFileSys.OpenTextFile(ISEFullPath, 8, true);
+    } catch (exception) {
+      var error_code = exception.number & 0xFFFF; // The other bits are a facility code.
+      if (error_code == 52) { // 52 is bad file name or number.
+        // Wait a second and try again.
+        WScript.Sleep(1000);
+        continue;
+      } else {
+        WScript.StdErr.WriteLine("ERROR: Exception caught trying to open file " + ISEFullPath);
+        var exceptionFilePath = ISERunDir + "/exception.log";
+        if (!ISEFileSys.FileExists(exceptionFilePath)) {
+          WScript.StdErr.WriteLine("See file " + exceptionFilePath + " for details.");
+          var exceptionFile = ISEFileSys.OpenTextFile(exceptionFilePath, 8, true);
+          exceptionFile.WriteLine("ERROR: Exception caught trying to open file " + ISEFullPath);
+          exceptionFile.WriteLine("\tException name: " + exception.name);
+          exceptionFile.WriteLine("\tException error code: " + error_code);
+          exceptionFile.WriteLine("\tException message: " + exception.message);
+          exceptionFile.Close();
+        }
+        throw exception;
+      }
+    }
+  }
+  // If we reached this point, we failed to open the file after 10 attempts.
+  // We need to error out.
+  WScript.StdErr.WriteLine("ERROR: Failed to open file " + ISEFullPath);
+  WScript.Quit(1);
 }

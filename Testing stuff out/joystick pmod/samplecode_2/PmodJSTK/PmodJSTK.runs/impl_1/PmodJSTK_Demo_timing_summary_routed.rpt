@@ -1,13 +1,13 @@
-Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Mon Jan 25 16:51:42 2016
-| Host         : WK84 running 64-bit major release  (build 9200)
-| Command      : report_timing_summary -warn_on_violation -max_paths 10 -file PmodJSTK_Demo_timing_summary_routed.rpt -rpx PmodJSTK_Demo_timing_summary_routed.rpx
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun Feb 21 00:35:28 2021
+| Host         : DESKTOP-MB5IJCE running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file PmodJSTK_Demo_timing_summary_routed.rpt -pb PmodJSTK_Demo_timing_summary_routed.pb -rpx PmodJSTK_Demo_timing_summary_routed.rpx -warn_on_violation
 | Design       : PmodJSTK_Demo
 | Device       : 7a35t-cpg236
-| Speed File   : -1  PRODUCTION 1.14 2014-09-11
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Timing Summary Report
 
@@ -22,6 +22,10 @@ Timing Summary Report
   Enable Input Delay Default Clock           :  No
   Enable Preset / Clear Arcs                 :  No
   Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
 
   Corner  Analyze    Analyze    
   Name    Max Paths  Min Paths  
@@ -52,9 +56,9 @@ Table of Contents
 --------------------
  There are 105 register/latch pins with no clock driven by root clock pin: CLK (HIGH)
 
- There are 13 register/latch pins with no clock driven by root clock pin: DispCtrl/DCLK_reg/C (HIGH)
+ There are 13 register/latch pins with no clock driven by root clock pin: DispCtrl/DCLK_reg/Q (HIGH)
 
- There are 99 register/latch pins with no clock driven by root clock pin: PmodJSTK_Int/SerialClock/CLKOUT_reg/C (HIGH)
+ There are 101 register/latch pins with no clock driven by root clock pin: PmodJSTK_Int/SerialClock/CLKOUT_reg/Q (HIGH)
 
 
 2. checking constant_clock
@@ -69,14 +73,14 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 558 pins that are not constrained for maximum delay. (HIGH)
+ There are 563 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
 
 5. checking no_input_delay
 --------------------------
- There are 6 input ports with no input delay specified. (HIGH)
+ There are 5 input ports with no input delay specified. (HIGH)
 
  There are 0 input ports with no input delay but user has a false path constraint.
 

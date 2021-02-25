@@ -68,7 +68,6 @@ set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 4
-  set_param synth.incrementalSynthesisCache C:/Users/George/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-10360-DESKTOP-MB5IJCE/incrSyn
   set_param xicom.use_bs_reader 1
   open_checkpoint PmodJSTK_Demo_routed.dcp
   set_property webtalk.parent_dir {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev1/JSTK_SPI_rev1.cache/wt} [current_project]
