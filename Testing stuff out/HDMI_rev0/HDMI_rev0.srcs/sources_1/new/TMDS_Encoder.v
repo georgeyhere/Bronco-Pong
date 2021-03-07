@@ -23,7 +23,7 @@
 
 
 module TMDS_Encoder(
-    input             Clk,
+    input             PClk,      // 25 Mhz TMDS Pixel Clock PCLK
     input             Reset_n,
     input             activeArea,
     input       [7:0] Data,
@@ -88,7 +88,7 @@ module TMDS_Encoder(
         N1_Dout <= 0;
     end
     
-    always@(posedge Clk, negedge Reset_n) begin
+    always@(posedge PClk, negedge Reset_n) begin
         if(Reset_n == 1'b0) begin  // resets
             Dout <= 0;
             Dout_buffer <= 0;     

@@ -42,179 +42,75 @@
 
 module testbench;
 
+// ===========================================================================
+// 				         Parameters, Regsiters, and Wires
+// ===========================================================================
+	reg PClk, Reset_n;
+    reg activeArea;
+    reg [7:0] Data;
+    reg [1:0] Control;
+    
+    wire [9:0] Dout;
+    
+    parameter PCLK_PERIOD = 40;   // 25 Mhz clock
+    parameter VSYNC_PERIOD = 16666667; // 60 frames per second
 
-	reg clk, resetn;
+// ===========================================================================
+//                               Unit Under Test    
+// =========================================================================== 
+    TMDS_Encoder UUT(
+    .PClk(PClk),
+    .Reset_n(Reset_n),
+    .activeArea(activeArea),
+    .Data(Data),
+    .Control(Control)
+    );
 
-	reg term_axis_tvalid;
-	wire term_axis_tready;
-	reg [7:0] term_axis_tdata;
-
-	wire s1_axis_tvalid;
-	wire s1_axis_tready;
-	wire [17:0] s1_axis_tdata;
-	wire [0:0] s1_axis_tuser;
-
-	wire s2_axis_tvalid;
-	wire s2_axis_tready;
-	wire [17:0] s2_axis_tdata;
-	wire [0:0] s2_axis_tuser;
-
-	wire s3_axis_tvalid;
-	wire s3_axis_tready;
-	wire [1:0] s3_axis_tdata;
-	wire [0:0] s3_axis_tuser;
-
-	wire s4_axis_tvalid;
-	wire s4_axis_tready;
-	wire [17:0] s4_axis_tdata;
-	wire [0:0] s4_axis_tuser;
-
-	wire s5_axis_tvalid;
-	wire s5_axis_tready = 1;
-	wire [17:0] s5_axis_tdata;
-	wire [3:0] s5_axis_tuser;
-
-	integer i;
-
-	
-
-	initial begin
-		#5 clk = 0;
-		forever #5 clk = ~clk;
-	end
-
-	reg new_frame_start = 0;
-	always @(posedge clk)
-		new_frame_start <= resetn && s5_axis_tvalid && s5_axis_tuser[0];
-
-	initial begin
-		resetn <= 0;
-		repeat (20) @(posedge clk);
-		resetn <= 1;
-		repeat (21) @(posedge new_frame_start);
-		repeat (100) @(posedge clk);
-		$finish;
-	end
-
-
-	task send_term_byte(input [7:0] Din);
+// ===========================================================================
+//                              Tasks/Assignments  
+// ===========================================================================    
+    
+    task sendData(input [7:0] Din);     // task to assign data so tb can be cleaner
 		begin
-			term_axis_tdata <= Din;
-			@(posedge clk);
-
-			while (!term_axis_tready)
-				@(posedge clk);
-
-			term_axis_tvalid <= 0;
+			@(posedge PClk);
+                Data <= Din;
 		end
 	endtask
+	
+	always#(PCLK_PERIOD/2) begin       // generate PCLK
+        PClk= ~PClk;
+    end
+    
+    always @(posedge PClk) begin        // display stuff
+		$display("## %b %b %b %b", activeArea, Data, Control, Dout);
+	end
 
+
+// ===========================================================================
+//                                  Stimulus 
+// =========================================================================== 
+
+		
 	initial begin
-		term_axis_tvalid <= 0;
-
-		#100;
-		while (!resetn) @(posedge clk);
-
-		send_term_byte("S");
-		send_term_byte("i");
-		send_term_byte("m");
-		send_term_byte("p");
-		send_term_byte("l");
-		send_term_byte("e");
-		send_term_byte("V");
-		send_term_byte("O");
-		send_term_byte("\n");
-		send_term_byte("\n");
-
-		send_term_byte("H");
-		send_term_byte("e");
-		send_term_byte("l");
-		send_term_byte("l");
-		send_term_byte("o");
-		send_term_byte(" ");
-		send_term_byte("W");
-		send_term_byte("o");
-		send_term_byte("r");
-		send_term_byte("l");
-		send_term_byte("d");
-		send_term_byte("!");
-		send_term_byte("\n");
-
-		send_term_byte("T");
-		send_term_byte("h");
-		send_term_byte("i");
-		send_term_byte("s");
-		send_term_byte(" ");
-		send_term_byte("i");
-		send_term_byte("s");
-		send_term_byte(" ");
-		send_term_byte("a");
-		send_term_byte(" ");
-		send_term_byte("t");
-		send_term_byte("e");
-		send_term_byte("s");
-		send_term_byte("t");
-		send_term_byte(".");
-		send_term_byte("\n");
-
-		send_term_byte("H");
-		send_term_byte("a");
-		send_term_byte("v");
-		send_term_byte("e");
-		send_term_byte(" ");
-		send_term_byte("a");
-		send_term_byte(" ");
-		send_term_byte("n");
-		send_term_byte("i");
-		send_term_byte("c");
-		send_term_byte("e");
-		send_term_byte(" ");
-		send_term_byte("d");
-		send_term_byte("a");
-		send_term_byte("y");
-		send_term_byte(".");
-		send_term_byte("\n");
-
-		for (i = 33; i < 127; i = i+1)
-			send_term_byte(i);
-		send_term_byte("?");
-
-		@(posedge new_frame_start);
-		@(posedge new_frame_start);
-		send_term_byte(8);
-		send_term_byte("!");
-		send_term_byte("\n");
-
-		for (i = 0; i < 55; i = i+1) begin
-			send_term_byte("#");
-			send_term_byte("\n");
-		end
-
-		send_term_byte("L");
-		send_term_byte("A");
-		send_term_byte("S");
-		send_term_byte("T");
-		send_term_byte(" ");
-		send_term_byte("L");
-		send_term_byte("I");
-		send_term_byte("N");
-		send_term_byte("E");
-
-		repeat (14) @(posedge new_frame_start);
-		send_term_byte(4);
-
-		repeat (2) @(posedge new_frame_start);
-		send_term_byte("\n");
-		send_term_byte(" ");
-		send_term_byte("B");
-		send_term_byte("y");
-		send_term_byte("e");
-		send_term_byte(".");
+	   Reset_n <= 0;
+	   activeArea <= 0;
+	   Data <= 0;
+	   Control <= 0;
+	   #100;
+	   Reset_n <= 1;
+	   
+	   while (!Reset_n) @(posedge PClk);
+	   sendData(8'b00);
+	   sendData(8'b01);
+	   sendData(8'b10);
+	   sendData(8'b11);
+	   
+	   @(posedge PClk) activeArea <= 1;
+	   sendData(8'b11111111);
+	   sendData(8'b01010101);
+	   sendData(8'b10101010);
+	   sendData(8'b01010000);
+	   sendData(8'b10101111);
 	end
 
-	always @(posedge clk) begin
-		if (s5_axis_tvalid) begin
-			$display("## %b %d %d %d", s5_axis_tuser, s5_axis_tdata[0 +: 6], s5_axis_tdata[6 +: 6], s5_axis_tdata[12 +: 6]);
-		end
-	end
 endmodule
