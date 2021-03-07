@@ -28,41 +28,54 @@
 
 module videoGenerator(
 
-    input            Pixel_Clk, // 25 Mhz pixel clock
+    input            PClk, // 25 Mhz pixel clock
     input            Rst,       // Active-high reset
     
-    output wire [7:0] Red,       // HDMI signals 
-    output wire [7:0] Green,
-    output wire [7:0] Blue,
-    output wire       hSync,
-    output wire       vSync,
-    output wire       activeArea     
+    output wire      TMDS_RX_N0,                
+    output wire      TMDS_RX_P0,  
+               
+    output wire      TMDS_RX_N1,              
+    output wire      TMDS_RX_P1,
+    
+    output wire      TMDS_RX_N2,                
+    output wire      TMDS_RX_P2, 
+                
+    output wire      TMDS_RX_N3,              
+    output wire      TMDS_RX_P3                 
     );
     
 // ===========================================================================
 // 			          Parameters, Regsiters, and Wires
 // ===========================================================================    
+    wire      Reset_n = ~Rst;
     
     reg [9:0] CounterX;
     reg [9:0] CounterY;
     
-    wire       TMDS_Clk;                // TMDS Channel 3
-    wire [9:0] TMDS_Red;                // TMDS Channel 2
-    wire [9:0] TMDS_Green;              // TMDS Channel 1
-    wire [9:0] TMDS_Blue;               // TMDS Channel 0
+    wire [7:0] Red;                     // intermediary wires for test pattern
+    wire [7:0] Green;
+    wire [7:0] Blue;
     
-    reg [3:0] TMDS_mod10=0;             // modulus 10 counter to check if time to shift in new stuff
-    reg       TMDS_shift_load=0;        // register that triggers shifting new stuff
-    reg [9:0] TMDS_Shift_Red=0;         // ten-bit shift register for TMDS Red output
-    reg [9:0] TMDS_Shift_Green=0;       // ten-bit shift register for TMDS Green output
-    reg [9:0] TMDS_Shift_Blue=0;        // ten-bit shift register for TMDS Blue output
+    wire [9:0] TMDS_Red;                     // intermediary wires for test pattern
+    wire [9:0] TMDS_Green;
+    wire [9:0] TMDS_Blue;
+    
+    wire activeArea;          
+    wire hSync;
+    wire vSync;
+    
+    reg [3:0] TMDS_ShiftCounter=0;      // modulus 10 counter to check if time to shift in new stuff
+    reg       TMDS_ShiftLoad=0;        // register that triggers shifting new stuff
+    reg [9:0] TMDS_ShiftRed=0;         // ten-bit shift register for TMDS Red output
+    reg [9:0] TMDS_ShiftGreen=0;       // ten-bit shift register for TMDS Green output
+    reg [9:0] TMDS_ShiftBlue=0;        // ten-bit shift register for TMDS Blue output
     
 
 // ===========================================================================
     // 			           Instantiate TMDS_ClockGen
 // ===========================================================================    
     TMDS_ClkGen TMDS_CLKGEN(            // 250 MHz TMDS Clock
-        .Clk(Clk),
+        .Clk(PClk),
         .TMDS_Clk(TMDS_Clk)
     );
     
@@ -80,8 +93,19 @@ module videoGenerator(
     assign Green[7:0] = CounterX[7:0] & {8{CounterY[6]}};
     assign Blue[7:0] = CounterY [7:0];
     
+    assign TMDS_RX_N0 = ~TMDS_Red;
+    assign TMDS_RX_P0 = TMDS_Red;
     
-    always@(posedge Pixel_Clk) begin                         // 25 Mhz Pixel Clock                          
+    assign TMDS_RX_N1 = ~TMDS_Green;
+    assign TMDS_RX_P1 = ~TMDS_Green;
+    
+    assign TMDS_RX_N2 = ~TMDS_Blue;
+    assign TMDS_RX_P2 = ~TMDS_Blue;
+    
+    assign TMDS_RX_N3 = ~TMDS_Clk;
+    assign TMDS_RX_P3 = ~TMDS_Clk;
+    
+    always@(posedge PClk) begin                         // 25 Mhz Pixel Clock                          
         CounterX <= (CounterX == 799) ? 0 : CounterX+1;      // increment CounterX each time a pixel is sent                                                                                     
         if(CounterX == 799)                                  // increment CounterY each time a row is completed
             CounterY <= (CounterY == 524) ? 0 : CounterY+1;  
@@ -92,6 +116,7 @@ module videoGenerator(
     TMDS_Encoder TMDS_RED(
     .PClk(PClk),
     .Reset_n(Reset_n),
+    .activeArea(activeArea),
     .Control(2'b00),
     .Data(Red),
     .Dout(TMDS_Red)
@@ -100,6 +125,7 @@ module videoGenerator(
     TMDS_Encoder TMDS_GREEN(
     .PClk(PClk),
     .Reset_n(Reset_n),
+    .activeArea(activeArea),
     .Control(2'b00),
     .Data(Green),
     .Dout(TMDS_Green)
@@ -108,15 +134,17 @@ module videoGenerator(
     TMDS_Encoder TMDS_BLUE(
     .PClk(PClk),
     .Reset_n(Reset_n),
+    .activeArea(activeArea),
     .Control({vSync,hSync}), // vSync and hSync are sent on Channel 0 only
     .Data(Blue),
     .Dout(TMDS_Blue)
     );
     
-    
-    
-    
-    
+    always@(posedge TMDS_Clk) begin
+        TMDS_ShiftRed <= TMDS_ShiftLoad ? TMDS_Red : TMDS_ShiftRed[9:1]; // either shift in next bit or load new pixel
+        TMDS_ShiftGreen <= TMDS_ShiftLoad ? TMDS_Green : TMDS_ShiftGreen[9:1];
+        TMDS_ShiftBlue <= TMDS_ShiftLoad ? TMDS_Blue : TMDS_ShiftBlue[9:1];
+    end
     
     
 endmodule

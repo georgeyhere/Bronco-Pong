@@ -21,7 +21,7 @@
 
 
 module TMDS_ClkGen(
-    input            Clk,
+    input       Clk,
     output wire TMDS_Clk
     );
     
