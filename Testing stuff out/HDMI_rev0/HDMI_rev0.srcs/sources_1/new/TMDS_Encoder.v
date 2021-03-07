@@ -1,4 +1,5 @@
 `timescale 1ns / 1ps
+
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -21,8 +22,7 @@
 // https://bit.ly/38gZYOb
 //////////////////////////////////////////////////////////////////////////////////
 
-
-module TMDS_Encoder(
+module TMDS_Encoder_rev0(
     input             PClk,      // 25 Mhz TMDS Pixel Clock PCLK
     input             Reset_n,
     input             activeArea,
@@ -38,8 +38,8 @@ module TMDS_Encoder(
     wire [7:0] Din;           // assign Din to a bus
     
     reg [9:0] Dout_buffer;    // Dout buffer
-    reg [8:0] X_Stage1;     // Stores result of Stage 1
-    reg [8:0] X_Stage2;     // Stores result of Stage 2
+    reg [9:0] X_Stage1;     // Stores result of Stage 1
+    reg [9:0] X_Stage2;     // Stores result of Stage 2
     
     reg [3:0] N1_Din;         // Stores number of 1s in Din
     reg [3:0] N0_Dout;        // Stores number of 0s in Dout
@@ -72,6 +72,7 @@ module TMDS_Encoder(
                 N1 = N1 + ~bits[i];
         end
     endfunction
+   
 
 // ===========================================================================
 //                              Implementation    
@@ -86,6 +87,9 @@ module TMDS_Encoder(
         N1_Din <= 0;
         N0_Dout <= 0;
         N1_Dout <= 0;
+        Disp <= 0;
+        Disp_next <= 0;
+        Disp_temp <= 0;
     end
     
     always@(posedge PClk, negedge Reset_n) begin
@@ -98,8 +102,30 @@ module TMDS_Encoder(
             N0_Dout <= 0;
             N1_Dout <= 0;
         
-        end else begin
-         
+        end 
+        
+        else if(activeArea == 0) begin                                      // Check 1 - False
+            Disp <= 0;
+            case(Control)                   // HDMI control signals                    
+                2'b00: begin
+                    X_Stage2 <= 10'b1101010100;       
+                end
+                2'b01: begin
+                    X_Stage2 <= 10'b0010101011;
+                end
+                2'b10: begin
+                    X_Stage2 <= 10'b0101010100;
+                end
+                2'b11: begin
+                    X_Stage2 <= 10'b1010101011;
+                end
+                default: begin
+                    X_Stage2 <= 10'b1101010100;
+                end
+            endcase
+       end         
+
+       else begin                                                           // Check 1 - True
             // Use if-else to create sequentiality
             // Too many checks for case statement
             
@@ -133,57 +159,34 @@ module TMDS_Encoder(
             zeroesX = N0(X_Stage1[7:0]);  // get # of 0s in Stage 1 result
             onesX = 3'd7 - zeroesX;       // get # of 1s in Stage 1 result from # of 0s
             //onesX = N1(X_Stage1[7:0]);
-            
-            case(activeArea)                                                    // Check 1 
-                0: begin                                                        // Check 1 - False
-                    case(Control)                   // HDMI control signals                    
-                        2'b00: begin
-                            X_Stage2 <= 10'b1101010100;
-                        end
-                        2'b01: begin
-                            X_Stage2 <= 10'b0010101011;
-                        end
-                        2'b10: begin
-                            X_Stage2 <= 10'b0101010100;
-                        end
-                        2'b11: begin
-                            X_Stage2 <= 10'b1010101011;
-                        end
-                    endcase
+            if ((Disp == 0) | (onesX==3'd4)) begin                      // Check 2 - True
+                X_Stage2[9] <= ~X_Stage1[8];                                
+                if (X_Stage1[8]==0) begin                               // Check 3 - True
+                    X_Stage2[7:0] <= ~X_Stage1[7:0];
+                    Disp_next <= Disp + zeroesX - onesX;
                 end
-                1: begin                                                        // Check 1 - True
-                    if ((Disp == 0) | (onesX==3'd4)) begin                      // Check 2 - True
-                        X_Stage2[9] <= ~X_Stage1[8];                                
-                        if (X_Stage1[8]==0) begin                               // Check 3 - True
-                            X_Stage2[7:0] <= ~X_Stage1[7:0];
-                            Disp <= Disp + zeroesX - onesX;
-                        end
-                        else begin                                              // Check 3 - False
-                            X_Stage2[7:0] <= X_Stage1[7:0];
-                            Disp <= Disp + onesX + zeroesX;
-                        end
-                    end
-            
-                    else if((Disp>0) & (onesX>4) | (Disp<0) & (onesX<4)) begin  // Check 2 - False                                       
-                        X_Stage2[9] <= 1;                                       // Check 4 - True
-                        X_Stage2[7:0] <= ~X_Stage1[7:0];                    
-                        Disp <= (X_Stage1[8]==0) ? (Disp + zeroesX - onesX) : (Disp + zeroesX - onesX + 7'd2);  // Check 5
-                    end
-                    else begin                                                  // Check 4 - False
-                        X_Stage2[9] <= 0;
-                        X_Stage2[7:0] <= X_Stage1[7:0];
-                        Disp <= (X_Stage1[8]==0) ? (Disp + onesX - zeroesX - 7'd2) : (Disp + onesX - zeroesX);  // Check 6    
-                    end      
+                else begin                                              // Check 3 - False
+                    X_Stage2[7:0] <= X_Stage1[7:0];
+                    Disp_next <= Disp + onesX + zeroesX;
                 end
-            endcase
-            // End of Stage 2
-            
-            // Buffer and assign outputs using 2x flip flops
-            Dout_buffer[9:0] <= X_Stage2;
-            Dout[9:0] <= Dout_buffer;
+            end
+            else if((Disp>0) & (onesX>4) | (Disp<0) & (onesX<4)) begin  // Check 2 - False                                       
+                X_Stage2[9] <= 1;                                       // Check 4 - True
+                X_Stage2[7:0] <= ~X_Stage1[7:0];                    
+                Disp_next <= (X_Stage1[8]==0) ? (Disp + zeroesX - onesX) : (Disp + zeroesX - onesX + 7'd2);  // Check 5
+            end
+            else begin                                                  // Check 4 - False
+                X_Stage2[9] <= 0;
+                X_Stage2[7:0] <= X_Stage1[7:0];
+                Disp_next <= (X_Stage1[8]==0) ? (Disp + onesX - zeroesX - 7'd2) : (Disp + onesX - zeroesX);  // Check 6    
+            end      
+            Disp <= Disp_next;
+            Dout_buffer <= X_Stage2;
         end
-    
+        // End of Stage 2
+        
+        // Buffer and assign outputs using 2x flip flops
+        Dout[9:0] <= Dout_buffer;
+        
     end
-    
-
 endmodule
