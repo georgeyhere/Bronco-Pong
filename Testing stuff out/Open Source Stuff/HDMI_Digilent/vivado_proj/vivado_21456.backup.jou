@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jan 23 11:22:35 2020
+# Process ID: 21456
+# Current directory: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21264
+# Log file: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/arthur/AppData/Roaming/Xilinx/Vivado\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Github/Zybo-Z7-20-HDMI/proj/Zybo-Z7-20-HDMI.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Github/Zybo-Z7-20-HDMI/proj/Zybo-Z7-20-HDMI.srcs/sources_1/bd/design_1/design_1.bd}
+disconnect_bd_net /dvi2rgb_0_aPixelClkLckd [get_bd_pins dvi2rgb_1/aPixelClkLckd]close_project
+open_project D:/Github/nexys-video-hdmi/proj/nexys-video-hdmi.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/Github/nexys-video-hdmi/proj/nexys-video-hdmi.srcs/sources_1/bd/hdmi/hdmi.bd}
+bd_cells dvi2rgb_1]
+endgroup
+startgroup
+endgroup
+set_property location {1 164 917} [get_bd_cells rst_ps7_0_100M]
+save_bd_design
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+wait_on_run impl_1
+open_run impl_1
+archive_project D:/Github/Zybo-Z7-20-HDMI/Zybo-Z7-20-HDMI.xpr.zip -temp_dir C:/Users/arthur/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-21456-WK142 -force -include_local_ip_cache

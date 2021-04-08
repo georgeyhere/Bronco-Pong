@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_FrameGen.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_FrameGen
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_FrameGen_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_FrameGen_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_Out.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_Out
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_PixelROM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_PixelROM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_TX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_TMDS
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_Timing.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_Timing
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/HDMI_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sources_1/new/TMDS-rev2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TMDS_encoder2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMIout_rev1/sub_HDMIout_rev0.srcs/sim_1/new/HDMI_top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module HDMI_top_tb

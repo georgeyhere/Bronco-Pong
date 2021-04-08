@@ -1,0 +1,21 @@
+
+****** Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source G:/Vitis_HLS/2020.2/scripts/vitis_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'G:/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'George' on host 'desktop-mb5ijce' (Windows NT_amd64 version 6.2) on Fri Mar 12 15:27:43 -0800 2021
+INFO: [HLS 200-10] In directory 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev1/HDMI_rev1.runs/design_1_synth_1'
+Sourcing Tcl script 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev1/HDMI_rev1.runs/design_1_synth_1/runhls.tcl'
+INFO: [HLS 200-1510] Running: open_project design_1_v_tpg_0_0 
+ERROR: [HLS 200-70] Project/solution path 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev1/HDMI_rev1.runs/design_1_synth_1/design_1_v_tpg_0_0' contains illegal character ' '.
+command 'ap_source' returned error code
+    while executing
+"source {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev1/HDMI_rev1.runs/design_1_synth_1/runhls.tcl}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 [list source $arg] "
+
+INFO: [Common 17-206] Exiting vitis_hls at Fri Mar 12 15:27:43 2021...

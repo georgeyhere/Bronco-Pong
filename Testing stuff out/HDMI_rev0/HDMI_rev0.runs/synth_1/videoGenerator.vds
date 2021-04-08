@@ -1,0 +1,335 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Mar  9 11:01:26 2021
+# Process ID: 1792
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.runs/synth_1
+# Command line: vivado.exe -log videoGenerator.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source videoGenerator.tcl
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.runs/synth_1/videoGenerator.vds
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source videoGenerator.tcl -notrace
+Command: synth_design -top videoGenerator -part xc7z020clg400-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24416 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 987.621 ; gain = 234.141
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'videoGenerator' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:29]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_ClkWzrd' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_ClkWzrd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.runs/synth_1/.Xil/Vivado-1792-DESKTOP-MB5IJCE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.runs/synth_1/.Xil/Vivado-1792-DESKTOP-MB5IJCE/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_ClkWzrd' (2#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_ClkWzrd.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_Encoder' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:43]
+WARNING: [Synth 8-6014] Unused sequential element N0_q_m_reg was removed.  [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:119]
+WARNING: [Synth 8-6014] Unused sequential element N1_q_m_reg was removed.  [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:120]
+WARNING: [Synth 8-6014] Unused sequential element cnt_next_reg was removed.  [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:127]
+WARNING: [Synth 8-6014] Unused sequential element cnt_tmp_reg was removed.  [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:135]
+WARNING: [Synth 8-6014] Unused sequential element q_m_reg was removed.  [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:97]
+WARNING: [Synth 8-6014] Unused sequential element q_out_next_reg was removed.  [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:123]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_Encoder' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'videoGenerator' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:29]
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_P0 driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1061.445 ; gain = 307.965
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1061.445 ; gain = 307.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1061.445 ; gain = 307.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1061.445 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'TMDS_CLKWIZ/clknetwork'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'TMDS_CLKWIZ/clknetwork'
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/videoGenerator_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/videoGenerator_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1169.340 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for PClk. (constraint file  {c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for PClk. (constraint file  {c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property DONT_TOUCH = true for TMDS_CLKWIZ/clknetwork. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 12    
+	   8 Input      4 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               10 Bit    Registers := 11    
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 10    
+	   4 Input     10 Bit        Muxes := 3     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 18    
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module videoGenerator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 1     
+Module TMDS_Encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   4 Input      8 Bit       Adders := 4     
+	   8 Input      4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 3     
+	   4 Input     10 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_N0 driven by constant 1
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_P0 driven by constant 0
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_N1 driven by constant 1
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_P1 driven by constant 1
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_N2 driven by constant 1
+WARNING: [Synth 8-3917] design videoGenerator has port TMDS_TX_P2 driven by constant 1
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'TMDS_ShiftRed_reg[9]/Q' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:98]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:98]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:98]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'TMDS_ShiftGreen_reg[9]/Q' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:101]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:101]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 1st driver pin 'TMDS_ShiftBlue_reg[9]/Q' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:104]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin Q with 2nd driver pin 'GND' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:104]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net Q is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:104]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |LUT1      |     1|
+|3     |IBUF      |     1|
+|4     |OBUF      |     8|
++------+----------+------+
+
+Report Instance Areas: 
++------+--------------+-------------+------+
+|      |Instance      |Module       |Cells |
++------+--------------+-------------+------+
+|1     |top           |             |    12|
+|2     |  TMDS_CLKWIZ |TMDS_ClkWzrd |     3|
++------+--------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 9 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:28 . Memory (MB): peak = 1169.340 ; gain = 307.965
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1169.340 ; gain = 415.859
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1181.410 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1186.563 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+18 Infos, 13 Warnings, 9 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1186.563 ; gain = 728.918
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1186.563 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.runs/synth_1/videoGenerator.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file videoGenerator_utilization_synth.rpt -pb videoGenerator_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  9 11:02:13 2021...

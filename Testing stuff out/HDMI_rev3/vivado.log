@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Mar 23 20:17:23 2021
+# Process ID: 24952
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24956 C:\Users\George\Desktop\Github\Bronco Pong\Testing stuff out\HDMI_rev3\HDMI_rev3.xpr
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/vivado.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:06 . Memory (MB): peak = 1114.652 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Successfully read diagram <design_1> from block design file <C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd>
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: HDMI_top
+INFO: [Device 21-403] Loading part xc7z020clg400-3
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1604.363 ; gain = 252.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMI_top' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCM_wrapper' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/.Xil/Vivado-24952-DESKTOP-MB5IJCE/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/.Xil/Vivado-24952-DESKTOP-MB5IJCE/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (2#1) [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'DCM_wrapper' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Timing' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Timing' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_TMDS' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_encoder2' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_encoder2' (5#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_TMDS' (6#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Out' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (7#1) [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Out' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_top' (9#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1658.914 ; gain = 307.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1658.914 ; gain = 307.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1658.914 ; gain = 307.359
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'CLKGEN/design_1_i/clk_wiz_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1658.914 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1779.020 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:12 . Memory (MB): peak = 1934.246 ; gain = 582.691
+27 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 1934.246 ; gain = 819.594
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Mar 23 20:30:01 2021] Launched synth_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/synth_1/runme.log
+[Tue Mar 23 20:30:01 2021] Launched impl_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1952.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 2324.617 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2324.617 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2324.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 2396.039 ; gain = 443.156
+report_timing -from[get_clocks PClk_design_1_clk_wiz_0_0]-to[get_clocks PClk_design_1_clk_wiz_0_0_1]
+ERROR: [Common 17-170] Unknown option '-fromPClk_design_1_clk_wiz_0_0-toPClk_design_1_clk_wiz_0_0_1', please type 'report_timing -help' for usage info.
+report_timing -from [get_clocks PClk_design_1_clk_wiz_0_0] -to [get_clocks PClk_design_1_clk_wiz_0_0_1]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -from_pins  -to_pins  -max_paths 1 -nworst 1 -delay_type max -sort_by slack.
+WARNING: [Timing 38-164] This design has multiple clocks. Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Mar 23 20:37:14 2021
+| Host         : DESKTOP-MB5IJCE running 64-bit major release  (build 9200)
+| Command      : report_timing -from [get_clocks PClk_design_1_clk_wiz_0_0] -to [get_clocks PClk_design_1_clk_wiz_0_0_1]
+| Design       : HDMI_top
+| Device       : 7z020-clg400
+| Speed File   : -3  PRODUCTION 1.12 2019-11-22
+-------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             33.423ns  (required time - arrival time)
+  Source:                 UUT1/Green_reg[3]/C
+                            (rising edge-triggered cell FDSE clocked by PClk_design_1_clk_wiz_0_0  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Destination:            UUT2/TMDS_CH1/balance_acc_reg[1]/D
+                            (rising edge-triggered cell FDCE clocked by PClk_design_1_clk_wiz_0_0_1  {rise@0.000ns fall@20.000ns period=40.000ns})
+  Path Group:             PClk_design_1_clk_wiz_0_0_1
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            40.000ns  (PClk_design_1_clk_wiz_0_0_1 rise@40.000ns - PClk_design_1_clk_wiz_0_0 rise@0.000ns)
+  Data Path Delay:        6.513ns  (logic 1.663ns (25.535%)  route 4.850ns (74.465%))
+  Logic Levels:           8  (LUT3=3 LUT4=1 LUT5=3 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    -0.591ns = ( 39.409 - 40.000 ) 
+    Source Clock Delay      (SCD):    -0.226ns
+    Clock Pessimism Removal (CPR):    0.365ns
+  Clock Uncertainty:      0.095ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.175ns
+    Phase Error              (PE):    0.000ns
+  Clock Domain Crossing:  Inter clock paths are considered valid unless explicitly excluded by timing constraints such as set_clock_groups or set_false_path.
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock PClk_design_1_clk_wiz_0_0 rise edge)
+                                                      0.000     0.000 r  
+    K17                                               0.000     0.000 r  Clk (IN)
+                         net (fo=0)                   0.000     0.000    CLKGEN/design_1_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.323     1.323 r  CLKGEN/design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           1.013     2.336    CLKGEN/design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.851    -3.515 r  CLKGEN/design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.694    -1.821    CLKGEN/design_1_i/clk_wiz_0/inst/PClk_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.079    -1.742 r  CLKGEN/design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=89, routed)          1.516    -0.226    UUT1/PClk_0
+    SLICE_X105Y143       FDSE                                         r  UUT1/Green_reg[3]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X105Y143       FDSE (Prop_fdse_C_Q)         0.313     0.087 r  UUT1/Green_reg[3]/Q
+                         net (fo=8, routed)           0.912     0.999    UUT1/Green[3]
+    SLICE_X109Y143       LUT3 (Prop_lut3_I0_O)        0.215     1.214 r  UUT1/dout[8]_i_4__1/O
+                         net (fo=1, routed)           0.589     1.802    UUT1/dout[8]_i_4__1_n_0
+    SLICE_X108Y143       LUT6 (Prop_lut6_I1_O)        0.247     2.049 r  UUT1/dout[8]_i_2__0/O
+                         net (fo=19, routed)          0.505     2.554    UUT1/dout[8]_i_2__0_n_0
+    SLICE_X109Y143       LUT5 (Prop_lut5_I4_O)        0.097     2.651 r  UUT1/dout[7]_i_2__0/O
+                         net (fo=7, routed)           0.663     3.314    UUT1/dout[7]_i_2__0_n_0
+    SLICE_X110Y144       LUT5 (Prop_lut5_I0_O)        0.111     3.425 r  UUT1/balance_acc[3]_i_17/O
+                         net (fo=4, routed)           0.345     3.770    UUT1/balance_acc[3]_i_17_n_0
+    SLICE_X112Y144       LUT5 (Prop_lut5_I1_O)        0.239     4.009 r  UUT1/balance_acc[0]_i_3__0/O
+                         net (fo=8, routed)           0.596     4.606    UUT1/balance_acc[0]_i_3__0_n_0
+    SLICE_X111Y144       LUT3 (Prop_lut3_I2_O)        0.097     4.703 r  UUT1/dout[9]_i_2__0/O
+                         net (fo=15, routed)          0.540     5.243    UUT1/dout[9]_i_2__0_n_0
+    SLICE_X112Y145       LUT3 (Prop_lut3_I2_O)        0.247     5.490 r  UUT1/balance_acc[2]_i_3__0/O
+                         net (fo=2, routed)           0.700     6.190    UUT1/balance_acc[2]_i_3__0_n_0
+    SLICE_X111Y146       LUT4 (Prop_lut4_I3_O)        0.097     6.287 r  UUT1/balance_acc[1]_i_1__0/O
+                         net (fo=1, routed)           0.000     6.287    UUT2/TMDS_CH1/balance_acc_reg[3]_1[1]
+    SLICE_X111Y146       FDCE                                         r  UUT2/TMDS_CH1/balance_acc_reg[1]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock PClk_design_1_clk_wiz_0_0_1 rise edge)
+                                                     40.000    40.000 r  
+    K17                                               0.000    40.000 r  Clk (IN)
+                         net (fo=0)                   0.000    40.000    CLKGEN/design_1_i/clk_wiz_0/inst/clk_in1
+    K17                  IBUF (Prop_ibuf_I_O)         1.256    41.256 r  CLKGEN/design_1_i/clk_wiz_0/inst/clkin1_ibufg/O
+                         net (fo=1, routed)           0.916    42.172    CLKGEN/design_1_i/clk_wiz_0/inst/clk_in1_design_1_clk_wiz_0_0
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -5.794    36.378 r  CLKGEN/design_1_i/clk_wiz_0/inst/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.542    37.921    CLKGEN/design_1_i/clk_wiz_0/inst/PClk_design_1_clk_wiz_0_0
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.072    37.993 r  CLKGEN/design_1_i/clk_wiz_0/inst/clkout1_buf/O
+                         net (fo=89, routed)          1.416    39.409    UUT2/TMDS_CH1/CLK
+    SLICE_X111Y146       FDCE                                         r  UUT2/TMDS_CH1/balance_acc_reg[1]/C
+                         clock pessimism              0.365    39.774    
+                         clock uncertainty           -0.095    39.679    
+    SLICE_X111Y146       FDCE (Setup_fdce_C_D)        0.030    39.709    UUT2/TMDS_CH1/balance_acc_reg[1]
+  -------------------------------------------------------------------
+                         required time                         39.709    
+                         arrival time                          -6.287    
+  -------------------------------------------------------------------
+                         slack                                 33.423    
+
+
+
+
+open_bd_design {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}
+startgroup
+set_property -dict [list CONFIG.PRIMITIVE {PLL} CONFIG.JITTER_SEL {Min_O_Jitter} CONFIG.USE_LOCKED {false} CONFIG.CLKOUT1_DRIVES {BUFG} CONFIG.CLKOUT2_DRIVES {BUFG} CONFIG.CLKOUT3_DRIVES {BUFG} CONFIG.CLKOUT4_DRIVES {BUFG} CONFIG.CLKOUT5_DRIVES {BUFG} CONFIG.CLKOUT6_DRIVES {BUFG} CONFIG.CLKOUT7_DRIVES {BUFG} CONFIG.FEEDBACK_SOURCE {FDBK_AUTO} CONFIG.MMCM_BANDWIDTH {HIGH} CONFIG.MMCM_CLKFBOUT_MULT_F {20} CONFIG.MMCM_COMPENSATION {ZHOLD} CONFIG.MMCM_CLKOUT0_DIVIDE_F {80} CONFIG.MMCM_CLKOUT1_DIVIDE {8} CONFIG.CLKOUT1_JITTER {93.285} CONFIG.CLKOUT1_PHASE_ERROR {83.972} CONFIG.CLKOUT2_JITTER {63.032} CONFIG.CLKOUT2_PHASE_ERROR {83.972}] [get_bd_cells clk_wiz_0]
+endgroup
+generate_target all [get_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}]
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+Wrote  : <C:\Users\George\Desktop\Github\Bronco Pong\Testing stuff out\HDMI_rev3\HDMI_rev3.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+Exporting to file c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+catch { config_ip_cache -export [get_ips -all design_1_clk_wiz_0_0] }
+export_ip_user_files -of_objects [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}]
+launch_runs design_1_clk_wiz_0_0_synth_1 -jobs 8
+[Tue Mar 23 20:41:49 2021] Launched design_1_clk_wiz_0_0_synth_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/design_1_clk_wiz_0_0_synth_1/runme.log
+export_simulation -of_objects [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}] -directory {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.ip_user_files/sim_scripts} -ip_user_files_dir {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.ip_user_files} -ipstatic_source_dir {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.ip_user_files/ipstatic} -lib_map_path [list {modelsim=C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.cache/compile_simlib/modelsim} {questa=C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.cache/compile_simlib/questa} {riviera=C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.cache/compile_simlib/riviera} {activehdl=C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Mar 23 20:45:05 2021] Launched synth_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/synth_1/runme.log
+[Tue Mar 23 20:45:05 2021] Launched impl_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/impl_1/runme.log
+close_bd_design [get_bd_designs design_1]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}]
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.005 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.085 . Memory (MB): peak = 5423.367 ; gain = 0.000
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.085 . Memory (MB): peak = 5423.367 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+[Tue Mar 23 20:53:53 2021] Launched synth_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/synth_1/runme.log
+[Tue Mar 23 20:53:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/impl_1/runme.log
+close_design
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: HDMI_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMI_top' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCM_wrapper' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/.Xil/Vivado-24952-DESKTOP-MB5IJCE/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/.Xil/Vivado-24952-DESKTOP-MB5IJCE/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (2#1) [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'DCM_wrapper' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Timing' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Timing' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_TMDS' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_encoder2' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_encoder2' (5#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_TMDS' (6#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Out' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (7#1) [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Out' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_top' (9#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'CLKGEN/design_1_i/clk_wiz_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 5423.367 ; gain = 0.000
+26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+report_drc -name drc_1 -ruledecks {default}
+Command: report_drc -name drc_1 -ruledecks default
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc completed successfully
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 5423.367 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 5423.367 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+report_methodology -name ultrafast_methodology_1
+Command: report_methodology -name ultrafast_methodology_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+report_methodology completed successfully
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/bd/design_1/design_1.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z020clg400-3
+Top: HDMI_top
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'HDMI_top' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCM_wrapper' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/.Xil/Vivado-24952-DESKTOP-MB5IJCE/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/.Xil/Vivado-24952-DESKTOP-MB5IJCE/realtime/design_1_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (2#1) [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'DCM_wrapper' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Timing' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Timing' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_TMDS' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_encoder2' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_encoder2' (5#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_TMDS' (6#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Out' [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (7#1) [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Out' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_top' (9#1) [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.srcs/sources_1/new/HDMI_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 5423.367 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.dcp' for cell 'CLKGEN/design_1_i/clk_wiz_0'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'CLKGEN/design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/HDMI_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/HDMI_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/constrs_1/new/Z7-20_HDMI.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 5423.367 ; gain = 0.000
+26 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 5423.367 ; gain = 0.000
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+report_drc -name drc_1 -ruledecks {default}
+Command: report_drc -name drc_1 -ruledecks default
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+report_drc completed successfully
+current_design impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -3, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Mar 23 20:59:56 2021] Launched impl_1...
+Run output will be captured here: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-13:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 5423.367 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B04BB2A
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 5423.367 ; gain = 0.000
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/impl_1/HDMI_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev3/HDMI_rev3.runs/impl_1/HDMI_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B04BB2A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B04BB2A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351B04BB2A
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 23 21:10:07 2021...

@@ -1,0 +1,21 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto e855ea1b30b04a23af096ad4c8f2f040 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot videoGenerator_behav xil_defaultlib.videoGenerator xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.dcm_sp_clock_divide_by_2
+Compiling module unisims_ver.dcm_sp_maximum_period_check(cloc...
+Compiling module unisims_ver.dcm_sp_maximum_period_check(cloc...
+Compiling module unisims_ver.dcm_sp_clock_lost
+Compiling module unisims_ver.DCM_SP(CLKFX_MULTIPLY=10)
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.TMDS_ClkGen
+Compiling module xil_defaultlib.TMDS_Encoder
+Compiling module xil_defaultlib.videoGenerator
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot videoGenerator_behav

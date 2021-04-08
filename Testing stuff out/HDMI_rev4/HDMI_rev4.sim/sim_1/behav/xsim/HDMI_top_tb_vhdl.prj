@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../HDMI_rev4.ip_user_files/bd/HDMI_Timing/ip/HDMI_Timing_v_tc_0_0/sim/HDMI_Timing_v_tc_0_0.vhd" \
+
+# Do not sort compile order
+nosort
