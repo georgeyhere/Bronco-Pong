@@ -1,5 +1,4 @@
 # Bronco-Pong
-Currently main focus.
 
 Bronco Pong is a single-player game based on the classic, Pong, implemented on a Zybo Z7-10 but with some extra bells and whistles. Technical features include bitmapped graphics, 
 HDMI TMDS encoding, and SPI.
