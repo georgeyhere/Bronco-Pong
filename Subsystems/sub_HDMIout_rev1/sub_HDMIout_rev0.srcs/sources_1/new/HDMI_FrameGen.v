@@ -121,7 +121,7 @@ module HDMI_FrameGen(
                 s3_FIFOAssign: begin
                     CounterX_Latch = CounterX_Latch;
                     if( (CounterX >= 0) & (CounterX < 640) ) begin
-                        FSM_NextState = (CounterX - CounterX_Latch == 16) ? s1_Read:s3_FIFOAssign; // repeats the same pixel value four times
+                        FSM_NextState = (CounterX - CounterX_Latch == 16) ? s1_Read:s3_FIFOAssign; // repeats the same pixel value sixteen times
                     end
                     else begin
                         FSM_NextState = s0_Default;

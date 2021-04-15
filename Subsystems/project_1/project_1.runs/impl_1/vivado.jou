@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Apr 14 17:51:27 2021
+# Process ID: 14924
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/project_1/project_1.runs/impl_1
+# Command line: vivado.exe -log test_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_top.tcl -notrace
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/project_1/project_1.runs/impl_1/test_top.vdi
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/project_1/project_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_top.tcl -notrace
