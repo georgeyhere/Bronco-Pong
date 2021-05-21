@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 12 13:00:02 2021
+# Process ID: 4840
+# Current directory: C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1
+# Command line: vivado.exe -log BP_top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source BP_top.tcl -notrace
+# Log file: C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.vdi
+# Journal file: C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source BP_top.tcl -notrace

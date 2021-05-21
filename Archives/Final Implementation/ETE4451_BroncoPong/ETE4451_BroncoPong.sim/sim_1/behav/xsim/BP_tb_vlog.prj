@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7" \
+"../../../../ETE4451_BroncoPong.ip_user_files/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/sim/VideoBuffer_blk_mem_gen_0_0.v" \
+"../../../../ETE4451_BroncoPong.ip_user_files/bd/VideoBuffer/sim/VideoBuffer.v" \
+"../../../../ETE4451_BroncoPong.ip_user_files/bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1_clk_wiz.v" \
+"../../../../ETE4451_BroncoPong.ip_user_files/bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1.v" \
+"../../../../ETE4451_BroncoPong.ip_user_files/bd/DCM/sim/DCM.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/BP_top.v" \
+"../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/hdl/DCM_wrapper.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/Display_top.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/GameControlTimer.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/GameTimer.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameGen_top.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Out.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/HDMI_PixelROM.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/HDMI_TX.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Timing.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/Mem_Timing.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v" \
+"../../../../ETE4451_BroncoPong.srcs/sources_1/new/TMDS-rev2.v" \
+"../../../../ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/hdl/VideoBuffer_wrapper.v" \
+"../../../../ETE4451_BroncoPong.srcs/sim_1/new/BP_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+DCM.v,verilog,xil_defaultlib,../../../bd/DCM/sim/DCM.v,incdir="$ref_dir/../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7"incdir="../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7"
+DCM_clk_wiz_0_1_clk_wiz.v,verilog,xil_defaultlib,../../../bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1_clk_wiz.v,incdir="$ref_dir/../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7"incdir="../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7"
+DCM_clk_wiz_0_1.v,verilog,xil_defaultlib,../../../bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1.v,incdir="$ref_dir/../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7"incdir="../../../../ETE4451_BroncoPong.gen/sources_1/bd/DCM/ipshared/d0f7"
+glbl.v,Verilog,xil_defaultlib,glbl.v

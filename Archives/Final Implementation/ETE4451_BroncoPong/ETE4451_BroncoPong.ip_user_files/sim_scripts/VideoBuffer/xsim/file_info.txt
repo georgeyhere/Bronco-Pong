@@ -1,0 +1,4 @@
+blk_mem_gen_v8_4.v,verilog,blk_mem_gen_v8_4_4,../../../../ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/ipshared/2985/simulation/blk_mem_gen_v8_4.v,
+VideoBuffer_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/sim/VideoBuffer_blk_mem_gen_0_0.v,
+VideoBuffer.v,verilog,xil_defaultlib,../../../bd/VideoBuffer/sim/VideoBuffer.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

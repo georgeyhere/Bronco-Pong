@@ -1,0 +1,149 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 11 16:17:10 2021
+# Process ID: 22792
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11440 C:\Users\George\Desktop\Github\Bronco Pong\Final Implementation\ETE4451_BroncoPong_rev2\ETE4451_BroncoPong\ETE4451_BroncoPong.xpr
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/vivado.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 8
+wait_on_run synth_1
+reset_run synth_1
+launch_runs impl_1 -jobs 8
+wait_on_run impl_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BallCollision_top.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BallCollision_top.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/collisionAddOn.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/collisionAddOn.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BallPosition.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BallPosition.v}}
+update_compile_order -fileset sources_1
+set_property is_enabled false [get_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BallPosition.v}}]
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JoystickCtrl.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JoystickCtrl.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JoystickCtrl.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JoystickCtrl.v}}
+file delete -force {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JoystickCtrl.v}
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmod_top.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmod_top.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmodSPI_top.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmodSPI_top.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/SPI_Control.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/SPI_Control.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmodSPI_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmodSPI_top.v}}
+file delete -force {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/JstkPmodSPI_top.v}
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/SPI_Control.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/SPI_Control.v}}
+file delete -force {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/SPI_Control.v}
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Timing.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BP_top.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Display_top.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControlTimer.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Timing.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/TMDS-rev2.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_PixelROM.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Out.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_TX.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameTimer.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameGen_top.v}}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControlTimer.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameTimer.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameGen_top.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Out.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_PixelROM.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_TX.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Timing.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Timing.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/TMDS-rev2.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControlTimer.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameTimer.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameGen_top.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Out.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_PixelROM.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_TX.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Timing.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Timing.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/TMDS-rev2.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Display_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Display_top.v}}
+export_ip_user_files -of_objects  [get_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BP_top.v}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BP_top.v}}
+add_files -norecurse {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/PmodJSTK.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/spiCtrl.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/SPImode0.v} {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/ClkDiv_66_67kHz.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/PaddlePos.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/PaddlePos.v}}
+update_compile_order -fileset sources_1
+close [ open {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/PMOD_5HzSampler.v} w ]
+add_files {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/PMOD_5HzSampler.v}}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}}]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}}]
+refresh_design
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}}]
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+close_hw_manager

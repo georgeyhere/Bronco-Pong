@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 11 20:54:17 2021
+# Process ID: 33376
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/FQYTOFFIJUAFB9Z/PmodJSTK
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22908 C:\Users\George\Desktop\Github\Bronco Pong\FQYTOFFIJUAFB9Z\PmodJSTK\PmodJSTK.xpr
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/FQYTOFFIJUAFB9Z/PmodJSTK/vivado.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/FQYTOFFIJUAFB9Z/PmodJSTK\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/George/Desktop/Github/Bronco Pong/FQYTOFFIJUAFB9Z/PmodJSTK/PmodJSTK.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/kfranz/Desktop/PmodJSTK' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'PmodJSTK.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:07 . Memory (MB): peak = 1116.395 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 11 23:19:22 2021...

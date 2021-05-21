@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 10 17:35:05 2021
+# Process ID: 23400
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/DCM_clk_wiz_0_1_synth_1
+# Command line: vivado.exe -log DCM_clk_wiz_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source DCM_clk_wiz_0_1.tcl
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/DCM_clk_wiz_0_1_synth_1/DCM_clk_wiz_0_1.vds
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/DCM_clk_wiz_0_1_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DCM_clk_wiz_0_1.tcl -notrace

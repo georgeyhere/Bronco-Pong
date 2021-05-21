@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 17 20:55:38 2021
+# Process ID: 19672
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMI_wFrameBuffer/project_1.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMI_wFrameBuffer/project_1.sim/sim_1/behav/xsim/xsim.dir/test_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMI_wFrameBuffer/project_1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Subsystems/sub_HDMI_wFrameBuffer/project_1.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/George/Desktop/Github/Bronco -notrace
+invalid command name "Common"
+    while executing
+"Common 17-165"
+    invoked from within
+"ERROR: [Common 17-165] Too many positional options when parsing 'out/HDMI_rev4/HDMI_rev4.hw/webtalk/labtool_webtalk.log', please type 'webtalk -help' ..."
+    (file "C:/Users/George/Desktop/Github/Bronco" line 1)
+INFO: [Common 17-206] Exiting Webtalk at Mon May 17 20:55:38 2021...

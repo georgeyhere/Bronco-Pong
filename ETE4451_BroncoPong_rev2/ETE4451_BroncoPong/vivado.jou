@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 17 18:16:31 2021
+# Process ID: 11712
+# Current directory: C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13124 C:\Users\George\Desktop\ETE4451_BroncoPong_rev2\ETE4451_BroncoPong\ETE4451_BroncoPong.xpr
+# Log file: C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/vivado.log
+# Journal file: C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.xpr
+update_compile_order -fileset sources_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd]
+refresh_design
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+set_property PROBES.FILE {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.ltx} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+set_property PROBES.FILE {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/impl_1/BP_top.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7z020_1] -filter {CELL_NAME=~"UUT3/ILA_SPI"}]]
+launch_simulation
+open_wave_config C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/GameControl_tb_behav.wcfg
+source BP_tb.tcl
+run 1.1 s
+run 1.1 s
+open_bd_design {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/bd/VideoBuffer/VideoBuffer.bd}
+run 1.1 s
+close_sim
+save_wave_config {C:/Users/George/Desktop/ETE4451_BroncoPong_rev2/ETE4451_BroncoPong/ETE4451_BroncoPong.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}

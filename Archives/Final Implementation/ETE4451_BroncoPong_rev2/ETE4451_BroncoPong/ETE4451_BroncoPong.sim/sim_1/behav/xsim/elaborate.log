@@ -1,0 +1,45 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: G:/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9d92745112a2444897ff75747fecf591 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot BP_tb_behav xil_defaultlib.BP_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.DCM_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.DCM_clk_wiz_0_1
+Compiling module xil_defaultlib.DCM
+Compiling module xil_defaultlib.DCM_wrapper
+Compiling module xil_defaultlib.GameControl
+Compiling module xil_defaultlib.GameControlTimer
+Compiling module xil_defaultlib.GameControl_top
+Compiling module xil_defaultlib.GameTimer
+Compiling module xil_defaultlib.Mem_Timing
+Compiling module xil_defaultlib.Mem_Writer
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_axi_regs_fwd_v8_4(C_DATA...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.VideoBuffer_blk_mem_gen_0_0
+Compiling module xil_defaultlib.VideoBuffer
+Compiling module xil_defaultlib.VideoBuffer_wrapper
+Compiling module xil_defaultlib.HDMI_Timing
+Compiling module xil_defaultlib.HDMI_FrameRead
+Compiling module xil_defaultlib.HDMI_PixelROM
+Compiling module xil_defaultlib.HDMI_FrameGen_top
+Compiling module xil_defaultlib.TMDS_encoder2
+Compiling module xil_defaultlib.HDMI_TMDS
+Compiling module unisims_ver.OBUFDS
+Compiling module xil_defaultlib.HDMI_Out
+Compiling module xil_defaultlib.Display_top
+Compiling module xil_defaultlib.BP_top
+Compiling module xil_defaultlib.BP_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot BP_tb_behav

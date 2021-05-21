@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="BP_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="BP_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="123600000001fs"></ZoomEndTime>
+      <Cursor1Time time="389175000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="325"></NameColumnWidth>
+      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="30" />
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">DCM</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/BP_tb/UUT/CLKGEN/clk_in1_0" type="logic">
+         <obj_property name="ElementShortName">clk_in1_0</obj_property>
+         <obj_property name="ObjectShortName">clk_in1_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/CLKGEN/reset_0" type="logic">
+         <obj_property name="ElementShortName">reset_0</obj_property>
+         <obj_property name="ObjectShortName">reset_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/CLKGEN/Clk_100MHz_0" type="logic">
+         <obj_property name="ElementShortName">Clk_100MHz_0</obj_property>
+         <obj_property name="ObjectShortName">Clk_100MHz_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/CLKGEN/PClk_0" type="logic">
+         <obj_property name="ElementShortName">PClk_0</obj_property>
+         <obj_property name="ObjectShortName">PClk_0</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/CLKGEN/TMDS_Clk_0" type="logic">
+         <obj_property name="ElementShortName">TMDS_Clk_0</obj_property>
+         <obj_property name="ObjectShortName">TMDS_Clk_0</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/Clk_100MHz" type="logic">
+      <obj_property name="ElementShortName">Clk_100MHz</obj_property>
+      <obj_property name="ObjectShortName">Clk_100MHz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/Reset" type="logic">
+      <obj_property name="ElementShortName">Reset</obj_property>
+      <obj_property name="ObjectShortName">Reset</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider67">
+      <obj_property name="label">GameControl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/startButton" type="logic">
+      <obj_property name="ElementShortName">startButton</obj_property>
+      <obj_property name="ObjectShortName">startButton</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/pauseSwitch" type="logic">
+      <obj_property name="ElementShortName">pauseSwitch</obj_property>
+      <obj_property name="ObjectShortName">pauseSwitch</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/LivesCount" type="logic">
+      <obj_property name="ElementShortName">LivesCount</obj_property>
+      <obj_property name="ObjectShortName">LivesCount</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/VMA_busy" type="logic">
+      <obj_property name="ElementShortName">VMA_busy</obj_property>
+      <obj_property name="ObjectShortName">VMA_busy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/UUT1a/vsync_latch0" type="logic">
+      <obj_property name="ElementShortName">vsync_latch0</obj_property>
+      <obj_property name="ObjectShortName">vsync_latch0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/UUT1a/vsync_latch1" type="logic">
+      <obj_property name="ElementShortName">vsync_latch1</obj_property>
+      <obj_property name="ObjectShortName">vsync_latch1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/UUT1a/VMA_busy_negedge" type="logic">
+      <obj_property name="ElementShortName">VMA_busy_negedge</obj_property>
+      <obj_property name="ObjectShortName">VMA_busy_negedge</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/Game_Enable" type="logic">
+      <obj_property name="ElementShortName">Game_Enable</obj_property>
+      <obj_property name="ObjectShortName">Game_Enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/Display_Enable" type="logic">
+      <obj_property name="ElementShortName">Display_Enable</obj_property>
+      <obj_property name="ObjectShortName">Display_Enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/GameTimer_Enable" type="logic">
+      <obj_property name="ElementShortName">GameTimer_Enable</obj_property>
+      <obj_property name="ObjectShortName">GameTimer_Enable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/GameTimer_Reset" type="logic">
+      <obj_property name="ElementShortName">GameTimer_Reset</obj_property>
+      <obj_property name="ObjectShortName">GameTimer_Reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/UUT1a/FSM_State" type="array">
+      <obj_property name="ElementShortName">FSM_State[1:0]</obj_property>
+      <obj_property name="ObjectShortName">FSM_State[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT1/UUT1a/FSM_NextState" type="array">
+      <obj_property name="ElementShortName">FSM_NextState[1:0]</obj_property>
+      <obj_property name="ObjectShortName">FSM_NextState[1:0]</obj_property>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider77">
+      <obj_property name="label">GameTimer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group99" type="group">
+      <obj_property name="label">GameTimer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/Enable" type="logic">
+         <obj_property name="ElementShortName">Enable</obj_property>
+         <obj_property name="ObjectShortName">Enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/segment_clk" type="logic">
+         <obj_property name="ElementShortName">segment_clk</obj_property>
+         <obj_property name="ObjectShortName">segment_clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/counter" type="array">
+         <obj_property name="ElementShortName">counter[25:0]</obj_property>
+         <obj_property name="ObjectShortName">counter[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/count_limit" type="array">
+         <obj_property name="ElementShortName">count_limit[25:0]</obj_property>
+         <obj_property name="ObjectShortName">count_limit[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/TimerDigit0" type="array">
+         <obj_property name="ElementShortName">TimerDigit0[3:0]</obj_property>
+         <obj_property name="ObjectShortName">TimerDigit0[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/TimerDigit1" type="array">
+         <obj_property name="ElementShortName">TimerDigit1[3:0]</obj_property>
+         <obj_property name="ObjectShortName">TimerDigit1[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT0/TimerDigit2" type="array">
+         <obj_property name="ElementShortName">TimerDigit2[3:0]</obj_property>
+         <obj_property name="ObjectShortName">TimerDigit2[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider84">
+      <obj_property name="label">HDMI_Timing</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group100" type="group">
+      <obj_property name="label">HDMI_Timing</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT4/PClk" type="logic">
+         <obj_property name="ElementShortName">PClk</obj_property>
+         <obj_property name="ObjectShortName">PClk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT4/vsync" type="logic">
+         <obj_property name="ElementShortName">vsync</obj_property>
+         <obj_property name="ObjectShortName">vsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT4/hsync" type="logic">
+         <obj_property name="ElementShortName">hsync</obj_property>
+         <obj_property name="ObjectShortName">hsync</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT4/CounterX" type="array">
+         <obj_property name="ElementShortName">CounterX[9:0]</obj_property>
+         <obj_property name="ObjectShortName">CounterX[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT4/CounterY" type="array">
+         <obj_property name="ElementShortName">CounterY[9:0]</obj_property>
+         <obj_property name="ObjectShortName">CounterY[9:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider142">
+      <obj_property name="label">MemWriter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="group273" type="group">
+      <obj_property name="label">MemWriter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/Clk" type="logic">
+         <obj_property name="ElementShortName">Clk</obj_property>
+         <obj_property name="ObjectShortName">Clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/Reset" type="logic">
+         <obj_property name="ElementShortName">Reset</obj_property>
+         <obj_property name="ObjectShortName">Reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/memCounterX" type="array">
+         <obj_property name="ElementShortName">memCounterX[9:0]</obj_property>
+         <obj_property name="ObjectShortName">memCounterX[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/memCounterY" type="array">
+         <obj_property name="ElementShortName">memCounterY[9:0]</obj_property>
+         <obj_property name="ObjectShortName">memCounterY[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/CounterX" type="array">
+         <obj_property name="ElementShortName">CounterX[9:0]</obj_property>
+         <obj_property name="ObjectShortName">CounterX[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/CounterY" type="array">
+         <obj_property name="ElementShortName">CounterY[9:0]</obj_property>
+         <obj_property name="ObjectShortName">CounterY[9:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/memTiming_en" type="logic">
+         <obj_property name="ElementShortName">memTiming_en</obj_property>
+         <obj_property name="ObjectShortName">memTiming_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/BRAM_address" type="array">
+         <obj_property name="ElementShortName">BRAM_address[15:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAM_address[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/BRAM_data" type="array">
+         <obj_property name="ElementShortName">BRAM_data[0:0]</obj_property>
+         <obj_property name="ObjectShortName">BRAM_data[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/BRAM_en" type="logic">
+         <obj_property name="ElementShortName">BRAM_en</obj_property>
+         <obj_property name="ObjectShortName">BRAM_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/disp_en" type="logic">
+         <obj_property name="ElementShortName">disp_en</obj_property>
+         <obj_property name="ObjectShortName">disp_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/BRAM_wr_en" type="logic">
+         <obj_property name="ElementShortName">BRAM_wr_en</obj_property>
+         <obj_property name="ObjectShortName">BRAM_wr_en</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/FSM_State" type="array">
+         <obj_property name="ElementShortName">FSM_State[1:0]</obj_property>
+         <obj_property name="ObjectShortName">FSM_State[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/FSM_NextState" type="array">
+         <obj_property name="ElementShortName">FSM_NextState[1:0]</obj_property>
+         <obj_property name="ObjectShortName">FSM_NextState[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/BP_tb/UUT/UUT4/UUT2/LivesCount" type="array">
+         <obj_property name="ElementShortName">LivesCount[1:0]</obj_property>
+         <obj_property name="ObjectShortName">LivesCount[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="divider" fp_name="divider91">
+      <obj_property name="label">Memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT4/UUT3/BRAM_PORTA_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT4/UUT3/BRAM_PORTA_0_we" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_we[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT4/UUT3/BRAM_PORTA_0_din" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTA_0_din[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTA_0_din[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT4/UUT3/BRAM_PORTB_0_en" type="logic">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_en</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT4/UUT3/BRAM_PORTB_0_addr" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_addr[15:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_addr[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/BP_tb/UUT/UUT4/UUT3/BRAM_PORTB_0_dout" type="array">
+      <obj_property name="ElementShortName">BRAM_PORTB_0_dout[0:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_PORTB_0_dout[0:0]</obj_property>
+   </wvobject>
+</wave_config>

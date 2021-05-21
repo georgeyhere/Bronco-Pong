@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 12 10:17:37 2021
+# Process ID: 760
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15196 C:\Users\George\Desktop\Github\Bronco Pong\Testing stuff out\joystick pmod\JSTK_SPI_rev2\JSTK_SPI_rev2.xpr
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2/vivado.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2/JSTK_SPI_rev2.xpr}
+update_compile_order -fileset sources_1

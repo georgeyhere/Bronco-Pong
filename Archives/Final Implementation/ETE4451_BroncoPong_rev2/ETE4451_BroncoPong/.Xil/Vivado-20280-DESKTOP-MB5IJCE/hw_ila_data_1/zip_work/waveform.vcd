@@ -1,0 +1,45 @@
+$date
+        2021-May-12 12:04:14
+$end
+$version
+        Vivado v2020.2 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 40 " UUT3/DOUT [39:0] $end
+$var reg 1 J UUT3/SS $end
+$var reg 1 K UUT3/SCLK $end
+$var reg 1 L UUT3/MOSI $end
+$var reg 1 M UUT3/MISO $end
+$var reg 1 N UUT3/Game_Enable $end
+$var reg 16 O UUT3/PMOD_Ydata [15:0] $end
+$var reg 10 _ UUT3/paddlePosY [9:0] $end
+$var reg 1 i _TRIGGER $end
+$var reg 1 j _WINDOW $end
+$var reg 1 k _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1101111000000001111111100000000110000000 "
+1J
+0K
+0L
+1M
+0N
+b1111111000000001 O
+b101101110 _
+0i
+1j
+0k
+$end
+#512
+1N
+1i
+#514
+0N
+b101101111 _
+#515
+b101110000 _

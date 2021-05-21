@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed May 12 10:17:37 2021
+# Process ID: 760
+# Current directory: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15196 C:\Users\George\Desktop\Github\Bronco Pong\Testing stuff out\joystick pmod\JSTK_SPI_rev2\JSTK_SPI_rev2.xpr
+# Log file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2/vivado.log
+# Journal file: C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2/JSTK_SPI_rev2.xpr}
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/joystick pmod/JSTK_SPI_rev2'
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:16 ; elapsed = 00:00:06 . Memory (MB): peak = 1113.629 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 12 10:20:58 2021...

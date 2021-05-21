@@ -1,0 +1,372 @@
+
+*** Running vivado
+    with args -log BP_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source BP_top.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source BP_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Vivado/2020.2/data/ip'.
+Command: synth_design -top BP_top -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 33292
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module DCM [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/synth/DCM.v:13]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1128.242 ; gain = 13.488
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'BP_top' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BP_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DCM_wrapper' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/hdl/DCM_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'DCM' [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/synth/DCM.v:13]
+INFO: [Synth 8-6157] synthesizing module 'DCM_clk_wiz_0_1' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/.Xil/Vivado-14616-DESKTOP-MB5IJCE/realtime/DCM_clk_wiz_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DCM_clk_wiz_0_1' (1#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/.Xil/Vivado-14616-DESKTOP-MB5IJCE/realtime/DCM_clk_wiz_0_1_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'DCM' (2#1) [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/synth/DCM.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'DCM_wrapper' (3#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/hdl/DCM_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'GameControl_top' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GameControl' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v:21]
+	Parameter s0_idle bound to: 0 - type: integer 
+	Parameter s1_game_running bound to: 1 - type: integer 
+	Parameter s2_game_pause bound to: 2 - type: integer 
+	Parameter s3_game_over bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'GameControl' (4#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Game_state.v:21]
+WARNING: [Synth 8-7071] port 'ballPosReset' of module 'GameControl' is unconnected for instance 'UUT1a' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v:43]
+WARNING: [Synth 8-7071] port 'paddlePosReset' of module 'GameControl' is unconnected for instance 'UUT1a' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v:43]
+WARNING: [Synth 8-7071] port 'LivesCountReset' of module 'GameControl' is unconnected for instance 'UUT1a' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v:43]
+WARNING: [Synth 8-7023] instance 'UUT1a' of module 'GameControl' has 18 connections declared, but only 15 given [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v:43]
+INFO: [Synth 8-6157] synthesizing module 'GameControlTimer' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControlTimer.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'GameControlTimer' (5#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControlTimer.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'GameControl_top' (6#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameControl_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Display_top' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Display_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'GameTimer' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameTimer.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'GameTimer' (7#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/GameTimer.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem_Timing' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_Timing' (8#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem_Writer' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v:21]
+	Parameter s0_INITIALIZE bound to: 2'b01 
+	Parameter s1_IDLE bound to: 2'b00 
+	Parameter s2_WRITE bound to: 2'b10 
+INFO: [Synth 8-226] default block is never used [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v:495]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v:536]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_Writer' (9#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Mem_Writer.v:21]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer_wrapper' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/hdl/VideoBuffer_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer' [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/synth/VideoBuffer.v:13]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer_blk_mem_gen_0_0' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/.Xil/Vivado-14616-DESKTOP-MB5IJCE/realtime/VideoBuffer_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VideoBuffer_blk_mem_gen_0_0' (10#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/.Xil/Vivado-14616-DESKTOP-MB5IJCE/realtime/VideoBuffer_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'VideoBuffer' (11#1) [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/synth/VideoBuffer.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'VideoBuffer_wrapper' (12#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/hdl/VideoBuffer_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Timing' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Timing' (13#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_FrameGen_top' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameGen_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_FrameRead' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v:23]
+	Parameter s0_INITIALIZE bound to: 2'b01 
+	Parameter s1_IDLE bound to: 2'b00 
+	Parameter s2_ACTIVE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_FrameRead' (14#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameRead.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_PixelROM' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_PixelROM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_PixelROM' (15#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_PixelROM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_FrameGen_top' (16#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_FrameGen_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_TMDS' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_encoder2' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_encoder2' (17#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_TMDS' (18#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Out' [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (19#1) [G:/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Out' (20#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Display_top' (21#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/Display_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'BP_top' (22#1) [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/new/BP_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.262 ; gain = 81.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.262 ; gain = 81.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1196.262 ; gain = 81.508
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1196.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/VideoBuffer_blk_mem_gen_0_0/VideoBuffer_blk_mem_gen_0_0_in_context.xdc] for cell 'UUT4/UUT3/VideoBuffer_i/blk_mem_gen_0'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/VideoBuffer_blk_mem_gen_0_0/VideoBuffer_blk_mem_gen_0_0_in_context.xdc] for cell 'UUT4/UUT3/VideoBuffer_i/blk_mem_gen_0'
+Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1_in_context.xdc] for cell 'CLKGEN/DCM_i/clk_wiz_0'
+Finished Parsing XDC File [c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1_in_context.xdc] for cell 'CLKGEN/DCM_i/clk_wiz_0'
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/constrs_1/new/test-constr.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/constrs_1/new/test-constr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.srcs/sources_1/constrs_1/new/test-constr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/BP_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/BP_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1329.227 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1329.227 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'UUT4/UUT3/VideoBuffer_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1330.680 ; gain = 215.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1330.680 ; gain = 215.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for SysClk. (constraint file  {c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1_in_context.xdc}, line 5).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for SysClk. (constraint file  {c:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.gen/sources_1/bd/DCM/ip/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1/DCM_clk_wiz_0_1_in_context.xdc}, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for UUT4/UUT3/VideoBuffer_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for UUT4/UUT3/VideoBuffer_i/blk_mem_gen_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CLKGEN/DCM_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for CLKGEN/DCM_i/clk_wiz_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1330.680 ; gain = 215.926
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'FSM_State_reg' in module 'GameControl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 s0_idle |                               00 |                               00
+         s1_game_running |                               01 |                               01
+           s2_game_pause |                               10 |                               10
+            s3_game_over |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FSM_State_reg' using encoding 'sequential' in module 'GameControl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1330.680 ; gain = 215.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   64 Bit       Adders := 1     
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
+	   8 Input    4 Bit       Adders := 6     
+	   7 Input    4 Bit       Adders := 3     
+	   3 Input    4 Bit       Adders := 3     
+	   6 Input    4 Bit       Adders := 3     
+	   3 Input    3 Bit       Adders := 3     
++---XORs : 
+	   2 Input      8 Bit         XORs := 3     
+	   3 Input      7 Bit         XORs := 3     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
+	               19 Bit    Registers := 2     
+	               10 Bit    Registers := 11    
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 8     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   4 Input   19 Bit        Muxes := 2     
+	   5 Input   10 Bit        Muxes := 3     
+	   2 Input   10 Bit        Muxes := 3     
+	   2 Input    8 Bit        Muxes := 3     
+	   4 Input    8 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 13    
+	   4 Input    4 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   6 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 14    
+	   3 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP BRAM_address0, operation Mode is: C+A*(B:0x280).
+DSP Report: operator BRAM_address0 is absorbed into DSP BRAM_address0.
+DSP Report: operator BRAM_address1 is absorbed into DSP BRAM_address0.
+DSP Report: Generating DSP UUT4/UUT5/UUT5a/BRAM_addr0, operation Mode is: C+A*(B:0x280).
+DSP Report: operator UUT4/UUT5/UUT5a/BRAM_addr0 is absorbed into DSP UUT4/UUT5/UUT5a/BRAM_addr0.
+DSP Report: operator UUT4/UUT5/UUT5a/BRAM_addr1 is absorbed into DSP UUT4/UUT5/UUT5a/BRAM_addr0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1330.680 ; gain = 215.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping	Report (see note below)
++---------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name    | DSP Mapping   | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Mem_Writer     | C+A*(B:0x280) | 10     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|HDMI_FrameRead | C+A*(B:0x280) | 10     | 10     | 10     | -      | 19     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
++---------------+---------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 1337.613 ; gain = 222.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1348.668 ; gain = 233.914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1368.191 ; gain = 253.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------+----------+
+|      |BlackBox name               |Instances |
++------+----------------------------+----------+
+|1     |DCM_clk_wiz_0_1             |         1|
+|2     |VideoBuffer_blk_mem_gen_0_0 |         1|
++------+----------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------+------+
+|      |Cell                      |Count |
++------+--------------------------+------+
+|1     |DCM_clk_wiz_0             |     1|
+|2     |VideoBuffer_blk_mem_gen_0 |     1|
+|3     |CARRY4                    |    35|
+|4     |DSP48E1                   |     2|
+|6     |LUT1                      |    10|
+|7     |LUT2                      |   171|
+|8     |LUT3                      |    76|
+|9     |LUT4                      |    75|
+|10    |LUT5                      |    77|
+|11    |LUT6                      |   298|
+|12    |FDCE                      |   180|
+|13    |FDRE                      |   102|
+|14    |FDSE                      |     5|
+|15    |IBUF                      |     3|
+|16    |OBUFDS                    |     4|
++------+--------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 1378.969 ; gain = 129.797
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 1378.969 ; gain = 264.215
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1378.969 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1389.047 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+70 Infos, 5 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:50 . Memory (MB): peak = 1389.047 ; gain = 274.293
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/George/Desktop/Github/Bronco Pong/Final Implementation/Checkpoints/ETE4451_BroncoPong/ETE4451_BroncoPong.runs/synth_1/BP_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file BP_top_utilization_synth.rpt -pb BP_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 11 15:49:33 2021...

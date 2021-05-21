@@ -1,0 +1,67 @@
+#--------------------------------------------------------------------------
+# Xilinx Vivado v2020.2 (64-bit)
+# SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Current time: Mon May 17 18:16:17 PDT 2021
+# Process ID (PID): 21388
+# User: George
+# OS: Windows 10
+# Project: ETE4451_BroncoPong
+# Part: xc7z020clg400-1
+#
+# This file is an indication that an internal application error occurred.
+# This information is useful for debugging. Please open a case with Xilinx.
+# Technical Support with this file and a testcase attached.
+#--------------------------------------------------------------------------
+Mon May 17 18:16:17 PDT 2021
+ui.utils.e: Error: Wrapper with null DB pointer
+	at ui.utils.d.c.Yj(SourceFile:713)
+	at ui.utils.q.Yj(SourceFile:2783)
+	at ui.data.common.L.<init>(SourceFile:35)
+	at ui.data.design.D.<init>(SourceFile:112)
+	at ui.project.f.aWO(SourceFile:42)
+	at ui.project.a.hKf(SourceFile:513)
+	at ui.project.a.xr(SourceFile:480)
+	at ui.views.Q.aB.T(SourceFile:325)
+	at ui.views.Q.aB.update(SourceFile:646)
+	at ui.views.Q.u.kdP(SourceFile:2596)
+	at ui.bo.aIL(SourceFile:2023)
+	at ui.views.cO.a(SourceFile:1431)
+	at ui.views.aq.a(SourceFile:608)
+	at ui.frmwork.a.c.j(SourceFile:91)
+	at ui.frmwork.a.c.b(SourceFile:56)
+	at ui.data.bt.c(SourceFile:661)
+	at ui.data.bt.M(SourceFile:154)
+	at ui.data.bt.d(SourceFile:297)
+	at ui.utils.swing.x.d.c.removeSelectionPaths(SourceFile:105)
+	at java.desktop/javax.swing.JTree.removeDescendantSelectedPaths(JTree.java:3804)
+	at ui.utils.swing.x.a.removeDescendantSelectedPaths(SourceFile:1506)
+	at java.desktop/javax.swing.JTree$TreeModelHandler.treeStructureChanged(JTree.java:3911)
+	at com.jidesoft.tree.AbstractTreeModel.fireTreeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.DefaultTreeModelWrapper.treeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.FilterableTreeModel.treeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.AbstractTreeModel.fireTreeStructureChanged(Unknown Source)
+	at com.jidesoft.tree.DefaultTreeModelWrapper.treeStructureChanged(Unknown Source)
+	at java.desktop/javax.swing.tree.DefaultTreeModel.fireTreeStructureChanged(DefaultTreeModel.java:607)
+	at java.desktop/javax.swing.tree.DefaultTreeModel.nodeStructureChanged(DefaultTreeModel.java:391)
+	at ui.views.o.L.K(SourceFile:274)
+	at ui.data.design.p.c(SourceFile:665)
+	at ui.data.design.p.handleTclEvent(SourceFile:452)
+	at ui.frmwork.a.o.c(SourceFile:42)
+	at ui.frmwork.E.i(SourceFile:260)
+	at ui.frmwork.E.dQ(SourceFile:336)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:303)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:770)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:721)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:715)
+	at java.base/java.security.AccessController.doPrivileged(Native Method)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:85)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:740)
+	at ui.frmwork.a.d.dispatchEvent(SourceFile:92)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+

@@ -1,0 +1,521 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu May  6 15:12:22 2021
+# Process ID: 11868
+# Current directory: C:/Users/Jonathan/Documents/project1-mypart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent580 C:\Users\Jonathan\Documents\project1-mypart\project_1.xpr
+# Log file: C:/Users/Jonathan/Documents/project1-mypart/vivado.log
+# Journal file: C:/Users/Jonathan/Documents/project1-mypart\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Jonathan/Documents/project1-mypart/project_1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'VideoBuffer.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+VideoBuffer_blk_mem_gen_0_0
+
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'clockGen.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+clockGen_clk_wiz_0_0
+
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:08 . Memory (MB): peak = 1112.414 ; gain = 0.000
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: test_top
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1607.246 ; gain = 245.219
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test_top' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Game_state' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Game_state.v:21]
+	Parameter s0_idle bound to: 0 - type: integer 
+	Parameter s1_game_running bound to: 1 - type: integer 
+	Parameter s2_game_pause bound to: 2 - type: integer 
+	Parameter s3_game_over bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Game_state.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'Game_state' (1#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Game_state.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clockGen_wrapper' [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/hdl/clockGen_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'clockGen' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/synth/clockGen.v:13]
+INFO: [Synth 8-6157] synthesizing module 'clockGen_clk_wiz_0_0' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.v:72]
+INFO: [Synth 8-6157] synthesizing module 'clockGen_clk_wiz_0_0_clk_wiz' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_clk_wiz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 40.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen_clk_wiz_0_0_clk_wiz' (5#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_clk_wiz.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen_clk_wiz_0_0' (6#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen' (7#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/synth/clockGen.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen_wrapper' (8#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/hdl/clockGen_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'InputRead' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/InputRead.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InputRead' (9#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/InputRead.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'Stretch' does not match port width (12) of module 'InputRead' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:96]
+WARNING: [Synth 8-7071] port 'cclk' of module 'InputRead' is unconnected for instance 'UUT0' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:91]
+WARNING: [Synth 8-7023] instance 'UUT0' of module 'InputRead' has 8 connections declared, but only 7 given [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:91]
+INFO: [Synth 8-6157] synthesizing module 'Mem_Timing' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_Timing' (10#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem_Writer' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Writer.v:23]
+	Parameter s0_INITIALIZE bound to: 2'b01 
+	Parameter s1_IDLE bound to: 2'b00 
+	Parameter s2_WRITE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Writer.v:411]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_Writer' (11#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Writer.v:23]
+WARNING: [Synth 8-7071] port 'TimerDigitT' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitI' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitM' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitM1' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitE' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitSemiColon' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'LivesCount_input' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7023] instance 'UUT2' of module 'Mem_Writer' has 23 connections declared, but only 16 given [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer_wrapper' [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/hdl/VideoBuffer_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/synth/VideoBuffer.v:13]
+INFO: [Synth 8-638] synthesizing module 'VideoBuffer_blk_mem_gen_0_0' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/synth/VideoBuffer_blk_mem_gen_0_0.vhd:73]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 1 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 38450 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 38450 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 1 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 38450 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 38450 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     4.169483 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/synth/VideoBuffer_blk_mem_gen_0_0.vhd:243]
+INFO: [Synth 8-256] done synthesizing module 'VideoBuffer_blk_mem_gen_0_0' (22#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/synth/VideoBuffer_blk_mem_gen_0_0.vhd:73]
+INFO: [Synth 8-6155] done synthesizing module 'VideoBuffer' (23#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/synth/VideoBuffer.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'VideoBuffer_wrapper' (24#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/hdl/VideoBuffer_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Timing' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Timing' (25#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_FrameGen_top' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_FrameGen_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_FrameRead' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_FrameRead.v:23]
+	Parameter s0_INITIALIZE bound to: 2'b01 
+	Parameter s1_IDLE bound to: 2'b00 
+	Parameter s2_ACTIVE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_FrameRead.v:125]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_FrameRead' (26#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_FrameRead.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_PixelROM' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_PixelROM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_PixelROM' (27#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_PixelROM.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_FrameGen_top' (28#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_FrameGen_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_TMDS' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'TMDS_encoder2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'TMDS_encoder2' (29#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/TMDS-rev2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_TMDS' (30#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_TX.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HDMI_Out' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (31#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:46332]
+INFO: [Synth 8-6155] done synthesizing module 'HDMI_Out' (32#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/HDMI_Out.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'test_top' (33#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1913.445 ; gain = 551.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1913.445 ; gain = 551.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1913.445 ; gain = 551.418
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1913.445 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/clockGen_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_board.xdc] for cell 'CLKGEN/clockGen_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.xdc] for cell 'CLKGEN/clockGen_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.xdc] for cell 'CLKGEN/clockGen_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/constrs_1/new/test-constr.xdc]
+Finished Parsing XDC File [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/constrs_1/new/test-constr.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1913.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  OBUFDS => OBUFDS: 4 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 1929.082 ; gain = 567.055
+57 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1929.082 ; gain = 816.668
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu May  6 16:03:23 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/synth_1/runme.log
+[Thu May  6 16:03:23 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/impl_1/runme.log
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1969.359 ; gain = 19.383
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'test_top' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Game_state' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Game_state.v:21]
+	Parameter s0_idle bound to: 0 - type: integer 
+	Parameter s1_game_running bound to: 1 - type: integer 
+	Parameter s2_game_pause bound to: 2 - type: integer 
+	Parameter s3_game_over bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Game_state.v:54]
+INFO: [Synth 8-6155] done synthesizing module 'Game_state' (1#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Game_state.v:21]
+INFO: [Synth 8-6157] synthesizing module 'clockGen_wrapper' [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/hdl/clockGen_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'clockGen' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/synth/clockGen.v:13]
+INFO: [Synth 8-6157] synthesizing module 'clockGen_clk_wiz_0_0' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.v:72]
+INFO: [Synth 8-6157] synthesizing module 'clockGen_clk_wiz_0_0_clk_wiz' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_clk_wiz.v:70]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (2#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:32983]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 40.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 4 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (3#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:39998]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (4#1) [C:/Xilinx/Vivado/2020.2/scripts/rt/data/unisim_comp.v:1083]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen_clk_wiz_0_0_clk_wiz' (5#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_clk_wiz.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen_clk_wiz_0_0' (6#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.v:72]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen' (7#1) [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/synth/clockGen.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'clockGen_wrapper' (8#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/clockGen/hdl/clockGen_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'InputRead' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/InputRead.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InputRead' (9#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/InputRead.v:23]
+WARNING: [Synth 8-689] width (1) of port connection 'Stretch' does not match port width (12) of module 'InputRead' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:96]
+WARNING: [Synth 8-7071] port 'cclk' of module 'InputRead' is unconnected for instance 'UUT0' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:91]
+WARNING: [Synth 8-7023] instance 'UUT0' of module 'InputRead' has 8 connections declared, but only 7 given [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:91]
+INFO: [Synth 8-6157] synthesizing module 'Mem_Timing' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Timing.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_Timing' (10#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Timing.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Mem_Writer' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Writer.v:23]
+	Parameter s0_INITIALIZE bound to: 2'b01 
+	Parameter s1_IDLE bound to: 2'b00 
+	Parameter s2_WRITE bound to: 2'b10 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Writer.v:411]
+INFO: [Synth 8-6155] done synthesizing module 'Mem_Writer' (11#1) [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/Mem_Writer.v:23]
+WARNING: [Synth 8-7071] port 'TimerDigitT' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitI' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitM' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitM1' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitE' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'TimerDigitSemiColon' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7071] port 'LivesCount_input' of module 'Mem_Writer' is unconnected for instance 'UUT2' [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+WARNING: [Synth 8-7023] instance 'UUT2' of module 'Mem_Writer' has 23 connections declared, but only 16 given [C:/Users/Jonathan/Documents/project1-mypart/project_1.srcs/sources_1/new/test_top.v:110]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer_wrapper' [C:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/hdl/VideoBuffer_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'VideoBuffer' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/synth/VideoBuffer.v:13]
+INFO: [Synth 8-638] synthesizing module 'VideoBuffer_blk_mem_gen_0_0' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/synth/VideoBuffer_blk_mem_gen_0_0.vhd:73]
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_AXI_SLAVE_TYPE bound to: 0 - type: integer 
+	Parameter C_USE_BRAM_BLOCK bound to: 0 - type: integer 
+	Parameter C_ENABLE_32BIT_ADDRESS bound to: 0 - type: integer 
+	Parameter C_CTRL_ECC_ALGO bound to: NONE - type: string 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 4 - type: integer 
+	Parameter C_MEM_TYPE bound to: 1 - type: integer 
+	Parameter C_BYTE_SIZE bound to: 9 - type: integer 
+	Parameter C_ALGORITHM bound to: 1 - type: integer 
+	Parameter C_PRIM_TYPE bound to: 1 - type: integer 
+	Parameter C_LOAD_INIT_FILE bound to: 0 - type: integer 
+	Parameter C_INIT_FILE_NAME bound to: no_coe_file_loaded - type: string 
+	Parameter C_INIT_FILE bound to: NONE - type: string 
+	Parameter C_USE_DEFAULT_DATA bound to: 0 - type: integer 
+	Parameter C_DEFAULT_DATA bound to: 0 - type: string 
+	Parameter C_HAS_RSTA bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_A bound to: CE - type: string 
+	Parameter C_RSTRAM_A bound to: 0 - type: integer 
+	Parameter C_INITA_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENA bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEA bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEA bound to: 0 - type: integer 
+	Parameter C_WEA_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_A bound to: NO_CHANGE - type: string 
+	Parameter C_WRITE_WIDTH_A bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_A bound to: 1 - type: integer 
+	Parameter C_WRITE_DEPTH_A bound to: 38450 - type: integer 
+	Parameter C_READ_DEPTH_A bound to: 38450 - type: integer 
+	Parameter C_ADDRA_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_RSTB bound to: 0 - type: integer 
+	Parameter C_RST_PRIORITY_B bound to: CE - type: string 
+	Parameter C_RSTRAM_B bound to: 0 - type: integer 
+	Parameter C_INITB_VAL bound to: 0 - type: string 
+	Parameter C_HAS_ENB bound to: 1 - type: integer 
+	Parameter C_HAS_REGCEB bound to: 0 - type: integer 
+	Parameter C_USE_BYTE_WEB bound to: 0 - type: integer 
+	Parameter C_WEB_WIDTH bound to: 1 - type: integer 
+	Parameter C_WRITE_MODE_B bound to: READ_FIRST - type: string 
+	Parameter C_WRITE_WIDTH_B bound to: 1 - type: integer 
+	Parameter C_READ_WIDTH_B bound to: 1 - type: integer 
+	Parameter C_WRITE_DEPTH_B bound to: 38450 - type: integer 
+	Parameter C_READ_DEPTH_B bound to: 38450 - type: integer 
+	Parameter C_ADDRB_WIDTH bound to: 16 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MEM_OUTPUT_REGS_B bound to: 1 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_MUX_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_MUX_PIPELINE_STAGES bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_INPUT_REGS_A bound to: 0 - type: integer 
+	Parameter C_HAS_SOFTECC_OUTPUT_REGS_B bound to: 0 - type: integer 
+	Parameter C_USE_SOFTECC bound to: 0 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_EN_ECC_PIPE bound to: 0 - type: integer 
+	Parameter C_READ_LATENCY_A bound to: 1 - type: integer 
+	Parameter C_READ_LATENCY_B bound to: 1 - type: integer 
+	Parameter C_HAS_INJECTERR bound to: 0 - type: integer 
+	Parameter C_SIM_COLLISION_CHECK bound to: ALL - type: string 
+	Parameter C_COMMON_CLK bound to: 1 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_COLL bound to: 0 - type: integer 
+	Parameter C_EN_SLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_USE_URAM bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRA_CHG bound to: 0 - type: integer 
+	Parameter C_EN_RDADDRB_CHG bound to: 0 - type: integer 
+	Parameter C_EN_DEEPSLEEP_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SHUTDOWN_PIN bound to: 0 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 0 - type: integer 
+	Parameter C_DISABLE_WARN_BHV_RANGE bound to: 0 - type: integer 
+	Parameter C_COUNT_36K_BRAM bound to: 1 - type: string 
+	Parameter C_COUNT_18K_BRAM bound to: 1 - type: string 
+	Parameter C_EST_POWER_SUMMARY bound to: Estimated Power for IP     :     4.169483 mW - type: string 
+INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_4' declared at 'c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ipshared/2985/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195321' bound to instance 'U0' of component 'blk_mem_gen_v8_4_4' [c:/Users/Jonathan/Documents/project1-mypart/project_1.gen/sources_1/bd/VideoBuffer/ip/VideoBuffer_blk_mem_gen_0_0/synth/VideoBuffer_blk_mem_gen_0_0.vhd:243]
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'source' was cancelled
+refresh_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2259.742 ; gain = 309.766
+INFO: [Common 17-344] 'refresh_design' was cancelled
+close_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu May  6 16:07:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/synth_1/runme.log
+[Thu May  6 16:07:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Thu May  6 16:15:06 2021] Launched synth_1...
+Run output will be captured here: C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/synth_1/runme.log
+[Thu May  6 16:15:06 2021] Launched impl_1...
+Run output will be captured here: C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-13:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 2259.742 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351B100FEA
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 3127.625 ; gain = 867.883
+set_property PROGRAM.FILE {C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/impl_1/test_top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/Jonathan/Documents/project1-mypart/project_1.runs/impl_1/test_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  6 16:25:24 2021...

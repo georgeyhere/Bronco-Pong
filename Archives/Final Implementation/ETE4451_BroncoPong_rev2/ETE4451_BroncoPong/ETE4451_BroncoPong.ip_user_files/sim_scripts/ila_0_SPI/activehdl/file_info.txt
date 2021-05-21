@@ -1,0 +1,5 @@
+xpm_cdc.sv,systemverilog,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../ETE4451_BroncoPong.gen/sources_1/ip/ila_0_SPI/hdl/verilog"
+xpm_memory.sv,systemverilog,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="../../../../ETE4451_BroncoPong.gen/sources_1/ip/ila_0_SPI/hdl/verilog"
+xpm_VCOMP.vhd,vhdl,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../ETE4451_BroncoPong.gen/sources_1/ip/ila_0_SPI/hdl/verilog"
+ila_0_SPI.v,verilog,xil_defaultlib,../../../../ETE4451_BroncoPong.gen/sources_1/ip/ila_0_SPI/sim/ila_0_SPI.v,incdir="../../../../ETE4451_BroncoPong.gen/sources_1/ip/ila_0_SPI/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v
