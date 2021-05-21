@@ -1,9 +1,0 @@
-0.6
-2019.2
-Nov  6 2019
-21:57:16
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sim_1/new/TMDS_Encoder_tb.v,1615078704,verilog,,,,testbench,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_ClkGen.v,1615149143,verilog,,C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v,,TMDS_ClkGen,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v,1615079311,verilog,,C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v,,TMDS_Encoder,,,,,,,,
-,,,,,,videoGenerator,,,,,,,,

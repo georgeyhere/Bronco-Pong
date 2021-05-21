@@ -1,7 +1,0 @@
-xpm_cdc.sv,systemverilog,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="$ref_dir/../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"incdir="../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"
-xpm_memory.sv,systemverilog,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,incdir="$ref_dir/../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"incdir="../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"
-xpm_VCOMP.vhd,vhdl,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="$ref_dir/../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"incdir="../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"
-clockGen_clk_wiz_0_0_clk_wiz.v,verilog,xil_defaultlib,../../../bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0_clk_wiz.v,incdir="$ref_dir/../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"incdir="../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"
-clockGen_clk_wiz_0_0.v,verilog,xil_defaultlib,../../../bd/clockGen/ip/clockGen_clk_wiz_0_0/clockGen_clk_wiz_0_0.v,incdir="$ref_dir/../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"incdir="../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"
-clockGen.v,verilog,xil_defaultlib,../../../bd/clockGen/sim/clockGen.v,incdir="$ref_dir/../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"incdir="../../../../project_1.gen/sources_1/bd/clockGen/ipshared/d0f7"
-glbl.v,Verilog,xil_defaultlib,glbl.v

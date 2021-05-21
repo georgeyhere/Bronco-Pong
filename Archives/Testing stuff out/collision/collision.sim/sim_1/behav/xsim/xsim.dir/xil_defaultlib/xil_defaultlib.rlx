@@ -1,9 +1,0 @@
-0.7
-2020.2
-Nov 18 2020
-09:47:47
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sim_1/new/collTest_tb.v,1620332843,verilog,,,,collTest_tb,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sources_1/new/ballSpeed.v,1620331944,verilog,,C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sources_1/new/collCheck.v,,collisionAddOn,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sources_1/new/collCheck.v,1620332925,verilog,,C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sources_1/new/collTest_top.v,,BallCollision,,,,,,,,
-C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sources_1/new/collTest_top.v,1620331820,verilog,,C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/collision/collision.srcs/sim_1/new/collTest_tb.v,,collTest_top,,,,,,,,

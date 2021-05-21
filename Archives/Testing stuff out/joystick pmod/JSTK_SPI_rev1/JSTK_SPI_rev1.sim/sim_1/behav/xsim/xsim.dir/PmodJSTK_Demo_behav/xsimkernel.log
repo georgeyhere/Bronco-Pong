@@ -1,7 +1,0 @@
-Running: xsim.dir/PmodJSTK_Demo_behav/xsimk.exe -simmode gui -wdb PmodJSTK_Demo_behav.wdb -simrunnum 0 -socket 54987
-Design successfully loaded
-Design Loading Memory Usage: 5836 KB (Peak: 5836 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 6580 KB (Peak: 6580 KB)
-Simulation CPU Usage: 31 ms

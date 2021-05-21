@@ -1,8 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_ClkGen.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TMDS_ClkGen
-INFO: [VRFC 10-2458] undeclared symbol pixclk, assumed default net type wire [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_ClkGen.v:29]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/TMDS_Encoder_OpenSource.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module TMDS_Encoder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module videoGenerator
-INFO: [VRFC 10-2458] undeclared symbol TMDS_Clk, assumed default net type wire [C:/Users/George/Desktop/Github/Bronco Pong/Testing stuff out/HDMI_rev0/HDMI_rev0.srcs/sources_1/new/videoGenerator.v:79]

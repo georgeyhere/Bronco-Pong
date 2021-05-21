@@ -1,4 +1,0 @@
-image: {
-  [bootloader]zynq_FSBL.elf
-  system.bit
-}

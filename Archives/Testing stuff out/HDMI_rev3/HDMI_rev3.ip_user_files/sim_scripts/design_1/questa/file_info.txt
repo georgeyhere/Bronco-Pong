@@ -1,6 +1,0 @@
-xpm_cdc.sv,systemverilog,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv,incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"
-xpm_VCOMP.vhd,vhdl,xpm,G:/Vivado/2020.2/data/ip/xpm/xpm_VCOMP.vhd,incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"
-design_1_clk_wiz_0_0_clk_wiz.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v,incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"
-design_1_clk_wiz_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v,incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"
-design_1.v,verilog,xil_defaultlib,../../../bd/design_1/sim/design_1.v,incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"incdir="../../../../HDMI_rev3.gen/sources_1/bd/design_1/ipshared/d0f7"
-glbl.v,Verilog,xil_defaultlib,glbl.v
